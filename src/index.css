@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* @import url('https://fonts.googleapis.com/css2?family=Yarndings+20&display=swap');
+.yarndings-20-regular {
+  font-family: "Yarndings 20", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.philosopher-bold {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proximanovacond';
+  src: url(./fonts/Fontspring-DEMO-proximanovacond-black.otf) format('truetype');
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: 'proximanovacond';
+    src: url(./fonts/Fontspring-DEMO-proximanovacond-medium.otf) format('opentype');
+    font-weight: medium;
 }
+
+@font-face {
+    font-family: 'proxima-nova';
+    src:url(./fonts/Fontspring-DEMO-proximanovacond-thin.otf) format('opentype');
+    font-weight: light;
+}
+
+.home h1{
+  font-family: proximanovacond;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.home p{
+  font-family: proxima-nova;
+  font-weight: light;
+  font-size: 25px;
+} */

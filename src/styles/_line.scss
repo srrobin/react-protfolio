@@ -1,0 +1,30 @@
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    column-gap: 30px;
+    .line__text{
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.71);
+        text-transform: uppercase;
+        color: #17181afc;
+        font-weight: 700;
+        font-size: 24px;
+        position: relative;
+        margin-left: 60px;
+        span{
+            position: absolute;
+            color: rgb(0 0 0 / 16%);
+            left: -43px;
+            font-size: 60px;
+            rotate: 0deg;
+            z-index: -3;
+            top: -20px;
+        }
+    }
+    .line__line{
+        width: 100%;
+        height: .010rem;
+        background: rgba(0, 0, 0, 0.4);
+    }
+}

@@ -1,0 +1,41 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 1em 4em;
+  background: #111314;
+  color: white;
+  border: solid thin #050606;
+  border-radius: 0.2em;
+  box-shadow: 0.1em 0.15em 0.2em rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ink {
+  position: absolute;
+  display: block;
+  background: rgba(255, 255, 255, 0.7);
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 0.5s linear;
+}
+
+@keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+.home__area .home__area__image {
+  height: 600px;
+  width: 300px;
+}
+.home__area .home__area__image img {
+  height: 100%;
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */
