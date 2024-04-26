@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: stretch;
     column-gap: 30px;
+    font-family: proximanovacond;
+    font-weight: bold;
     .line__text{
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.71);
@@ -15,7 +17,7 @@
         span{
             position: absolute;
             color: rgb(0 0 0 / 16%);
-            left: -43px;
+            left: -62px;
             font-size: 60px;
             rotate: 0deg;
             z-index: -3;

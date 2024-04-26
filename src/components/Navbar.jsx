@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className='navbar'>
              <ul>
                 <li><LinkButton url={"/"}>Set Meeting</LinkButton></li>
-                <li><Srbutton /></li>
+                <li><Srbutton  textTitle="download cv"/></li>
              </ul>
         </div>
     );

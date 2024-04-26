@@ -2,10 +2,9 @@ $btn-color: #111314;
 
 .btn{
   position: relative;
-  position: relative;
-  display: inline-block;
+  display: flex;
   appearance: none;
-  padding: .6em 2em;
+  padding: 0.5em 1em;
   background: #111314;
   color: white;
   border: solid thin #050606;
@@ -14,6 +13,9 @@ $btn-color: #111314;
   overflow: hidden;
   cursor: pointer;
   font-size: 16px;
+  align-items: center;
+  column-gap: 20px;
+  text-transform: capitalize;
 }
 .ink{
   position: absolute;

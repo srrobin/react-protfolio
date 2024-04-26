@@ -1,0 +1,25 @@
+.quote__area{
+    padding: 100px 20px;
+    display: grid;
+    place-items: center;
+    .quote__text{
+       position: relative;
+       z-index: 10;
+       font-family: 'Overused-Grotesk';
+       text-transform: uppercase;
+       font-weight: bolder;
+       font-size: clamp(30px, 8vw, 70px);
+       color: rgb(107, 112, 109);
+       text-align: center;
+    }
+    span{
+        position: absolute;
+        z-index: -1;
+        color: #ccc;
+        font-size: 100px;
+        top: -80px;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+}

@@ -1,7 +1,10 @@
 import React from 'react';
-import protImage from "../assets/p3.jpg"
+import protImage from "../assets/r.jpg"
 import Artistic from './Artistic';
-import Line from './Line';
+import About from './About';
+import ShortProject from './ShortProject';
+import QuoteArea from './QuoteArea';
+import Footer from './Footer';
 
 const Protfolio = () => {
     return (
@@ -15,8 +18,14 @@ const Protfolio = () => {
             </div>
            </div>
         </div>
+
         <Artistic />
-        <Line text="education" sub="edu" /> 
+
+        <About />
+        <ShortProject />
+        <QuoteArea />
+        <Footer />
+
         </>
     );
 };

@@ -1,0 +1,15 @@
+
+.about__area{
+    padding: 100px 20px;
+    .single__about{
+        // padding: 0 20px;
+        .single__desc {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            column-gap: 40px;
+            margin-inline-start: 100px;
+            padding: 10px 0 22px 0;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { GoArrowUpRight } from "react-icons/go"
 
-const  Srbutton = () =>  {
+const  Srbutton = ({textTitle}) =>  {
   const [clicked, setClicked] = useState(false);
   const [posX, setPosX] = useState(0);
   const [posY, setPosY] = useState(0);
@@ -19,7 +20,7 @@ const  Srbutton = () =>  {
   return (
     <div style={{ padding: '10px' }}>
       <button onClick={rippleEffect} className={`btn`}>
-        Button Click
+       {textTitle}  <GoArrowUpRight style={{fontSize: "20px"}}/>
         { clicked &&
           <span className="ink" style={{ top: `${posY}px`, left: `${posX}px` }} />
         }
