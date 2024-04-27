@@ -1,12 +1,5 @@
 import React from 'react';
-import { IoLogoWhatsapp } from "react-icons/io";
-// import { FaFacebook } from "react-icons/fa";
-// <FaFacebook />
-// import { FaGithub } from "react-icons/fa6";
-// <FaGithub />
-// import { FaLinkedin } from "react-icons/fa";
-// <FaLinkedin />
-import { RiExternalLinkLine } from "react-icons/ri";
+import { GoArrowUpRight } from "react-icons/go"
 
 
 const SingleSocial = ({title,icon}) => {
@@ -14,7 +7,7 @@ const SingleSocial = ({title,icon}) => {
         <div className='single__social'>
             {icon}
             {title}
-             <RiExternalLinkLine />
+             <GoArrowUpRight className=''/>
         </div>
     );
 };

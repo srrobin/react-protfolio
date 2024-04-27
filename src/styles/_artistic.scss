@@ -1,14 +1,18 @@
 
     .artistic__area{
-        padding: 30px 20px;
+        padding: 100px 20px 0px;
+        @include media-md {
+            padding: 30px 20px 0px;
+        } 
         .yarndings-20-regular {
             font-family: "Yarndings 20", system-ui;
             font-weight: 400;
             font-style: normal;
-            font-size: 50px;
-            // letter-spacing: 1px;
+            overflow: hidden;
+            font-size: clamp(20px, 6vw, 42px);
             color: rgba(0, 0, 0, 0.71);
             }
+   
     }
     .line{
         display: flex;

@@ -18,23 +18,47 @@
     span{
         position: absolute;
         background: #fff;
-        padding: 10px 60px;
+        padding: 16px 60px;
         left: 50%;
         transform: translate(-50%);
-        top: -25px;
-        border-radius: 30px;
+        top: -13px;
+        border-radius: 17px;
         font-size: 25px;
         color: #050002;
+        &:before {
+            position: absolute;
+            content: "";
+            height: 25px;
+            width: 25px;
+            background: #0c0c0c;
+            border-radius: 50%;
+            box-shadow: 10px -10px #fff;
+            left: -25px;
+            top: 13px;
+        }
+        &:after { 
+            position: absolute;
+            content: "";
+            height: 25px;
+            width: 25px;
+            background: #0c0c0c;
+            border-radius: 50%;
+            box-shadow: -10px -10px #fff;
+            right: -25px;
+            top: 13px;
+        }
     }
+
     .footer__contact{
         display: grid;
-        grid-template-columns: .8fr .9fr .7fr .6fr;
+        // grid-template-columns: .8fr .9fr .7fr .6fr;
+        grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
         gap: 10px;
         place-items: center;
         height: 100%;
         color: #fff;
        .contact__section{
-        margin-block-start: 60px;
+        margin-block-start: 85px;
         background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
         padding: 15px;
         border-radius: 10px;
@@ -43,11 +67,9 @@
             flex-direction: column;
             gap: 30px;
             .quote__text{
-              text-align:left;
-              position: relative;
-            //   background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
-            //   padding: 15px;
-            //   border-radius: 10px;
+                text-align: left;
+                position: relative;
+                text-transform: capitalize;
             }
             .footer__quote{
                 position: absolute;
@@ -77,6 +99,7 @@
             display: flex;
             align-items: center;
             gap: 6px;
+            text-transform: lowercase;
         }
        }
        .cvdownload__section{
@@ -101,6 +124,11 @@
     padding: 10px 20px;
     border: 5px solid #191919;
     border-radius: 10px;
+    transition: all .5s ease;
+    &:hover{
+      transform: translateY(-3px);
+      cursor: pointer;
+    }
 }
 .footer__copyright{
     background-color: #000;

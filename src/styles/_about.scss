@@ -1,15 +1,18 @@
 
 .about__area{
-    padding: 100px 20px;
+    padding: 100px 20px 0px;
+    @include media-md {
+        padding: 50px 20px 0px;
+    } 
     .single__about{
-        // padding: 0 20px;
         .single__desc {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            column-gap: 40px;
-            margin-inline-start: 100px;
-            padding: 10px 0 22px 0;
+            .desc__text{ 
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                column-gap: 40px;
+                padding: 10px 0 22px 0;
+            }
         }
     }
 }
