@@ -1,3 +1,5 @@
+@import "./variables";
+
 .quote__area{
     padding: 100px 20px;
     display: grid;
@@ -9,13 +11,13 @@
        text-transform: uppercase;
        font-weight: bolder;
        font-size: clamp(30px, 8vw, 70px);
-       color: rgb(107, 112, 109);
+       color: $color_one;
        text-align: center;
     }
     span{
         position: absolute;
         z-index: -1;
-        color: #ccc;
+        color: $color_subg;
         font-size: 100px;
         top: -80px;
         left: 50%;

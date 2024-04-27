@@ -1,6 +1,7 @@
 import React from 'react';
 import projectImage from "../assets/pro2.jpg"
 import Srbutton from './srbutton/Srbutton';
+import RoundLinkBtn from './srbutton/RoundLinkBtn';
 
 const ProjectUpTitle = () => {
     return (
@@ -13,6 +14,7 @@ const ProjectUpTitle = () => {
            </div>
            <div className='project__image'>
              <img src={projectImage} alt=''/>
+             <RoundLinkBtn />
            </div>
 
         </div>

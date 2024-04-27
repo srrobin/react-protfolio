@@ -1,30 +1,49 @@
+@import "./variables";
+
 .line{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 30px;
+    column-gap:100px;
     font-family: proximanovacond;
     font-weight: bold;
     padding: 50px 0;
-    border-bottom: .1rem solid #ddd;
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.4);;
+    @include media-md {
+        flex-direction: column;
+    }
     .line__text{
         text-transform: uppercase;
-        color: rgba(0, 0, 0, 0.71);
         text-transform: uppercase;
-        color: #17181afc;
+        color: $color_two;
         font-weight: 700;
         font-size: 24px;
         position: relative;
-        margin-left: 60px;
+        margin-left: 50px;
+        min-width: 150px;
+        @include media-md {
+            margin-left: 0px;
+            margin-bottom: 50px;
+        }
         span{
             position: absolute;
-            color: rgb(0 0 0 / 16%);
+            color: $color_one;
             left: -62px;
-            font-size: 60px;
+            font-size: 70px;
             rotate: 0deg;
             z-index: -3;
-            top: -20px;
+            top: -30px;
+            @include media-md{
+                font-size: 70px;
+                top: -30px;
+            }
         }
+    }
+    .about__desc{
+        color: $color_two;
+        font-family: 'proximanovacond';
+        font-weight: bold;
+        line-height: 40px;
     }
     .line__line{
         width: 100%;

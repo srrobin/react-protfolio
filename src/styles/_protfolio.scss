@@ -1,3 +1,5 @@
+@import "./variables";
+
 .prot__area{
     // max-height:calc(100vh - 90px);
     display: flex;
@@ -9,13 +11,15 @@
             font-weight: medium;
             font-size: 30px;
             padding:0 20px;
+            color: $color_two;
+
         }
         .prot__name{
             font-family: 'Overused-Grotesk';
             text-transform: uppercase;
             font-weight: bolder;
             font-size: clamp(30px, 8vw, 70px);
-            color: rgb(107, 112, 109);
+            color: $color_one;
             padding:0 20px;
         }
         .prot__image{

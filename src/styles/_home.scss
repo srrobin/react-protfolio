@@ -1,4 +1,4 @@
-
+@import "./variables";
 .home__area{
     height:calc(100vh - 90px) ;
     display: grid;
@@ -33,10 +33,10 @@
       cursor: pointer;
       transition: all 0.25s ease-in-out;
       font-size: 50px;
-      color: antiquewhite;
+      color: $color_bg;
       &:hover{
         transform: scale(1);
-        background: #00ff00cf;
+        background: $color_one;
         color: black;
         font-size:30px ;
       }

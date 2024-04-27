@@ -1,21 +1,22 @@
+@import "./variables";
 .link__icon{
-    background: rgba(0, 0, 0, 0.4);
-    height: 80px;
-    width: 80px;
-    display: grid;
-    place-items: center;
-    // position: absolute;
-    // right: 15px;
-    border-radius: 50%;
-    // top: 15px;
-    z-index: 10;
-    cursor: pointer;
-    transition: all 0.25s ease-in-out;
-    font-size: 50px;
-    color: antiquewhite;
+  background: $extra_two;
+  height: 80px;
+  width: 80px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  z-index: 115;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  font-size: 50px;
+  color: $color_bg;
+  position: absolute;
+  right: 5px;
+  top: 5px;
     &:hover{
       transform: scale(1);
-      background: #00ff00cf;
+      background: $color_one;
       color: black;
       font-size:30px ;
     }

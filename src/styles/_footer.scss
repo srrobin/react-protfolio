@@ -1,12 +1,4 @@
-// background-color: #050002;
-// background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-
-
-// background-color: #050002;
-// background-image: url("https://www.transparenttextures.com/patterns/pinstriped-suit.png");
-
-// background-color: #050002;
-// background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+@import "./variables";
 
 .footer{
     min-height: 200px;
@@ -17,7 +9,7 @@
     position: relative;
     span{
         position: absolute;
-        background: #fff;
+        background: $color_bg;
         padding: 16px 60px;
         left: 50%;
         transform: translate(-50%);
@@ -32,7 +24,7 @@
             width: 25px;
             background: #0c0c0c;
             border-radius: 50%;
-            box-shadow: 10px -10px #fff;
+            box-shadow: 10px -10px  $color_bg;;
             left: -25px;
             top: 13px;
         }
@@ -43,7 +35,7 @@
             width: 25px;
             background: #0c0c0c;
             border-radius: 50%;
-            box-shadow: -10px -10px #fff;
+            box-shadow: -10px -10px  $color_bg;;
             right: -25px;
             top: 13px;
         }
@@ -51,12 +43,11 @@
 
     .footer__contact{
         display: grid;
-        // grid-template-columns: .8fr .9fr .7fr .6fr;
         grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
         gap: 10px;
         place-items: center;
         height: 100%;
-        color: #fff;
+        color:  $color_one;;
        .contact__section{
         margin-block-start: 85px;
         background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
@@ -66,10 +57,16 @@
             display: flex;
             flex-direction: column;
             gap: 30px;
+            @include media-md{
+                align-items: center;
+            }
             .quote__text{
                 text-align: left;
                 position: relative;
                 text-transform: capitalize;
+                @include media-md{
+                    text-align: center;
+                }
             }
             .footer__quote{
                 position: absolute;
@@ -103,6 +100,23 @@
         }
        }
        .cvdownload__section{
+        margin-block-start: 85px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .qr__code{
+            height: 150px;
+            width: 150px;
+            border: 8px solid #191919;
+            border-radius: 16px;
+        }
+        img{
+            border-radius: 8px; 
+            height: 100%;
+            width: 100%; 
+        }
+
        }
        .social__section{
         display: flex;
@@ -135,5 +149,5 @@
     padding: 10px 20px;
     text-align: center;
     text-transform: capitalize;
-    color:aliceblue;
+    color: $color_one;
 }

@@ -1,13 +1,13 @@
-$btn-color: #111314;
+@import "./variables";
 
 .btn{
   position: relative;
   display: flex;
   appearance: none;
   padding: 0.5em 1em;
-  background: #111314;
-  color: white;
-  border: solid thin #050606;
+  background: $color_two;
+  color: $color_one;
+  border: solid thin $color_two;
   border-radius: 0.2em;
   box-shadow: 0.1em 0.15em 0.2em rgba(0, 0, 0, 0.4);
   overflow: hidden;

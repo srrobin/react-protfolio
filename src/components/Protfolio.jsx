@@ -1,6 +1,6 @@
 import React from 'react';
 import Artistic from './Artistic';
-import About from './About';
+import Abouts from './Abouts';
 import ShortProject from './ShortProject';
 import QuoteArea from './QuoteArea';
 import Footer from './Footer';
@@ -20,7 +20,7 @@ const Protfolio = () => {
         </div>
 
         <Artistic />
-        <About />
+        <Abouts />
         <ShortProject />
         <QuoteArea />
         <Footer />

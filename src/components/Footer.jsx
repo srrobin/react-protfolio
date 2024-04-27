@@ -10,6 +10,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Srbutton from "./srbutton/Srbutton";
+import qrCode from "../assets/qr.png";
 
 
 
@@ -40,7 +41,12 @@ const Footer = () => {
                     <dd class="small"> <FaSkype  style={{ color: "#108ee9"}} /> srrobin07</dd>
                 </dl>
             </div>
-              <div className='cvdownload__section'><Srbutton  textTitle="download cv"/></div>
+              <div className='cvdownload__section'>
+                <Srbutton  textTitle="download cv"/>
+                    <div className='qr__code'>
+                        <img src={qrCode} alt=''/>
+                    </div>
+                </div>
               <div className='social__section'> 
               <SingleSocial title="what's app" icon={<IoLogoWhatsapp />} />
                <SingleSocial title="facebook" icon={<FaFacebook />} />

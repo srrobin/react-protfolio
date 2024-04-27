@@ -1,11 +1,13 @@
 import React from 'react';
 import projectImage from "../assets/pro1.jpg"
 import Srbutton from './srbutton/Srbutton';
+import RoundLinkBtn from './srbutton/RoundLinkBtn';
 const ProjectDownTitle = () => {
     return (
         <div className='project__downtitle'>
            <div className='project__image'>
              <img src={projectImage} alt=''/>
+             <RoundLinkBtn />
            </div>
            <div className='project__about'>
              <div className='project__title'>petclinic</div>
