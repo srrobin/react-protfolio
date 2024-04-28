@@ -11,7 +11,7 @@ const tagYeallow = {
 const Experience = () => {
     return (
         <div>
-            <SingleAbout  text="my experience "sub="exp" yes={true}> 
+            <SingleAbout  text="my experience "sub="xp" yes={true}> 
            
                <ul>  
                  <li>🢅 I worked for 1 <sup>➕</sup> years as intern plus junior front end  DEVELOPER  at <span style={tagYeallow}>Hypertag Solution Ltd, Bangladesh </span></li>

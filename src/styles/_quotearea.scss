@@ -4,6 +4,17 @@
     padding: 100px 20px;
     display: grid;
     place-items: center;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        height: 700px;
+        width: 700px;
+        background: $color_subg;
+        border-radius: 50%;
+        top: 5px;
+
+    }
     .quote__text{
        position: relative;
        z-index: 10;
@@ -11,17 +22,22 @@
        text-transform: uppercase;
        font-weight: bolder;
        font-size: clamp(30px, 8vw, 70px);
-       color: $color_one;
+       color: $color_subg;
        text-align: center;
+    //    color:transparent;
+       -webkit-text-stroke: 3px $color_two;
     }
     span{
         position: absolute;
         z-index: -1;
-        color: $color_subg;
-        font-size: 100px;
+        color: $color_two;
+        font-size: clamp(50px, 8vw, 100px);
         top: -80px;
         left: 50%;
         transform: translate(-50%);
         text-align: center;
+        @include media-md {
+            top: -65px;
+        }
     }
 }
