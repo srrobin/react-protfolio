@@ -1,18 +1,26 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Home from './components/Home';
 import Protfolio from './components/Protfolio';
 import "./App.css"
 import Navbar from './components/Navbar';
+import {  AnimatePresence } from "framer-motion"
 
 const App = () => {
+  const location = useLocation();
+  const imgProperty = {
+    height: 400,
+    width: 300,
+  };
   return (
     <main>
       <Navbar />
-      <Routes>
-         <Route path="/" element={<Home />} />
-          <Route path="/robin" element={<Protfolio />}/>
+      <AnimatePresence initial={false} mode='wait'>
+      <Routes  location={location} key={location.pathname}>
+         <Route path="/" element={<Home imgProperty={imgProperty}/>} />
+          <Route path="/robin" element={<Protfolio imgProperty={imgProperty} />}/>
       </Routes>
+      </AnimatePresence>
     </main>
   );
 };

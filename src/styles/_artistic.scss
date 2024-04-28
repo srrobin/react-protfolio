@@ -9,9 +9,10 @@
             font-family: "Yarndings 20", system-ui;
             font-weight: 400;
             font-style: normal;
-            overflow: hidden;
+            white-space: nowrap;
             font-size: clamp(20px, 6vw, 42px);
             color: $color_one;
+            will-change: transform;
             }
    
     }

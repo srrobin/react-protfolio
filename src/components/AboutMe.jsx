@@ -8,10 +8,9 @@ const AboutMe = () => {
            
                 <div>
                     <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam eius nulla at laudantium perferendis quasi recusandae a officia. Voluptas, vitae.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam eius nulla at laudantium perferendis quasi recusandae a officia. Voluptas, vitae.
-                    </p> 
-                </div>  
+                    I am a self 👩‍💻taught creative front-end developer and web designer based in Dhaka, Bangladesh . I especially like to work on the front end of software. As a front-end developer and web designer, helping startups gain their unfair advantage. Although I majored in math, I love coding. When I'm not developing or designing, I enjoy studying or traveling around the various rural areas of Bangladesh.
+                    </p>         
+                    </div>  
            
             </SingleAbout>
         </div>

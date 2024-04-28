@@ -22,7 +22,7 @@ const Footer = () => {
             <div className='footer__contact'>
               <div className='contact__section'>
                 <div className='contact__quote'>
-                    <div className='quote__text'>
+                    <div className='quote__text' style={{  fontFamily: "Philosopher"}}>
                      <div className='footer__quote'><BiSolidQuoteLeft /></div>
                      I feel very honored that the Hawaiian spirits chose to contact me.
                     </div>
@@ -34,7 +34,7 @@ const Footer = () => {
               <div className='info__section'>
                 <dl>
                     <dt>Phone Number:</dt>
-                    <dd class="small"><BsTelephoneInboundFill style={{ color: "2FA150"}}/>  018 27 57 87 68</dd>
+                    <dd class="small"><BsTelephoneInboundFill style={{ color: "2FA150"}}/> +880 1302 700 760 </dd>
                     <dt>Email Number:</dt>
                     <dd class="small"> <MdEmail style={{ color: "F7B400"}}/> srrobin07@gmail.com</dd>
                     <dt> Skype Number: </dt>

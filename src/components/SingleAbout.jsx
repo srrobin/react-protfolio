@@ -1,10 +1,13 @@
 import React from 'react';
+import LinkRoundLinkBtn from './srbutton/LinkRoundLinkBtn';
 
-const SingleAbout = ({text, sub, children}) => {
+const SingleAbout = ({text, sub, children,yes}) => {
     return (
         <div className='line'>
             <div className='line__text'>{text} <span>{sub}</span></div>
             <div className='about__desc'>{children}</div>
+            {yes &&  <LinkRoundLinkBtn />}
+           
         </div>
     );
 };
