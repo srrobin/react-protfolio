@@ -48,10 +48,10 @@ const Footer = () => {
                     </div>
                 </div>
               <div className='social__section'> 
-              <SingleSocial title="what's app" icon={<IoLogoWhatsapp />} />
-               <SingleSocial title="facebook" icon={<FaFacebook />} />
-               <SingleSocial title="Linkedin" icon={<FaLinkedin />} />
-               <SingleSocial title="github" icon={<FaGithub />} />
+               <SingleSocial title="what's app" icon={<IoLogoWhatsapp style={{color: '#3FE05C'}}/>} />
+               <SingleSocial title="facebook" icon={<FaFacebook style={{color: '#1469C7'}}/>} />
+               <SingleSocial title="Linkedin" icon={<FaLinkedin style={{color: '#0981BF'}}/>} />
+               <SingleSocial title="github" icon={<FaGithub style={{color: ''}}/>} />
                </div>
             </div>
         </div>
