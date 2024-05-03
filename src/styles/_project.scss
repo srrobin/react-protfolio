@@ -1,24 +1,62 @@
 @import "./variables";
 
-.short__project{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 100px 0px;
-    @include media-md {
-        padding: 30px 20px ;
-        justify-content: center;
-    } 
+
+.demo__project{
+    padding: 50px 0 20px;
+    position: relative;
+    span{
+        position: absolute;
+        font-size:clamp(40px ,8vw, 100px);
+        font-weight: bolder;
+        color: $color_one;
+        opacity: .4;
+        left: 20px;
+        @include media-md{
+            top: 27px;
+            left: 50%;
+            transform: translate(-50%);
+            white-space: nowrap;
+            padding: 0 20px;
+        }
+    }
+    .project__title__top{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        font-size: 30px;
+        color: $color_two;
+        padding: 0 20px;
+        font-weight: bold;
+        @include media-md{
+            justify-content:center;
+        }
+   
+    }
+    .short__project{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 100px 0px;
+        @include media-md {
+            padding: 30px 20px ;
+            justify-content: center;
+        } 
+    }
 }
+
 
 .project__downtitle{
     max-width: 550px;
+    @include media-md {
+       order:0
+    }
     .project__image{
       max-width: 540px;
-      max-height: 309px;
+    //   max-height: 309px;
       overflow: hidden;
-      border: 10px solid #f3f3f3;;
-      border-radius: 20px;
+    //   border: 10px solid #f3f3f3;;
+    //   border-radius: 10px;
       position: relative;
     }
     img{
@@ -48,13 +86,25 @@
 }
 .project__uptitle{
     max-width: 400px;
+    background: $color_subg;
+    padding: 15px;
+    border-radius: 10px;
+    @include media-md {
+        max-width: 550px;
+        order: 0;
+     }
+
     .project__image{
       max-width: 400px;
-      max-height: 225px;
+    //   max-height: 225px;
       overflow: hidden;
-      border: 10px solid #f3f3f3;;
-      border-radius: 20px;
+    //   border: 10px solid #f3f3f3;;
+    //   border-radius: 10px;
       position: relative;
+      @include media-md {
+        max-width: 540px;
+        // max-height: 309px;
+     }
     }
     img{
         width: 100%;

@@ -1,13 +1,12 @@
-import React from 'react';
-import Artistic from './Artistic';
-import Abouts from './Abouts';
-import ShortProject from './ShortProject';
-import QuoteArea from './QuoteArea';
-import Footer from './Footer';
-import protImage from "../assets/r.jpg"
 import { motion } from "framer-motion";
-import AnimatedTextWord from './AnimatedTextWord';
+import React from 'react';
+import protImage from "../assets/r1.jpg";
+import Abouts from './Abouts';
 import AnimatedTextCharacter from './AnimatedTextCharacter';
+import Artistic from './Artistic';
+import Footer from './Footer';
+import QuoteArea from './QuoteArea';
+import ShortProject from './ShortProject';
 
 const Protfolio = () => {
     return (
@@ -22,7 +21,7 @@ const Protfolio = () => {
                 <AnimatedTextCharacter text="Hey you, I'm" />
                 </div>
                 <div className='prot__name'>
-                <AnimatedTextWord text="Sayam Rahman Robin" />
+                <AnimatedTextCharacter text="Sayam  Rahman  Robin" />
                 </div>
                 <div className='prot__image'>
                     <img src={protImage} alt=''/>
@@ -35,7 +34,6 @@ const Protfolio = () => {
         <ShortProject />
         <QuoteArea />
         <Footer />
-
         </>
     );
 };

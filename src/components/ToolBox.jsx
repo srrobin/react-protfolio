@@ -2,32 +2,23 @@ import React from 'react';
 import SingleAbout from './SingleAbout';
 import learning from '../assets/learning2.gif';
 const tagGreen = {
-    // color: "#ADAD9C", 
     background: "#ADAD9C", 
     border:".1rem solid #ADAD9C",
     padding:"0px 10px",
-    margin: "3px 0px",
     borderRadius:"6px"
 }
 const tagYeallow = {
-    // color:"#e1e708", 
     color:"#d48806", 
-    // background:"#ADAD9C", 
-    // background:"#fffbe6", 
     background:"#ebe5c4", 
-    // border:".1rem solid #ADAD9C",
     border:".1rem solid #d48806",
     padding:"0px 10px",
-    margin: "3px 0px",
     borderRadius:"6px"
 }
 const tagRed = {
-    // color: "#a3202a", 
     color: "#8b0000", 
     background: "#ADAD9C", 
     border:".1rem solid #ADAD9C",
     padding:"0px 10px",
-    margin: "3px 0px",
     borderRadius:"6px",
     display:"flex",
     alignItems:"center"
@@ -38,7 +29,8 @@ const area={
     justifyContent: "flex-end",
     gap:"5px",
     flexWrap:"wrap",
-    padding: "0 20px"
+    padding: "0 20px",
+    marginBottom: "5px"
    
     }
 const ToolBox = () => {

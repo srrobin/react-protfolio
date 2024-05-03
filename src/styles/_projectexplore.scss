@@ -1,0 +1,42 @@
+@import "./variables";
+
+
+
+.demo__projects__area{
+    padding: 0 20px; 
+    .demo__title__area{
+        position: relative;
+        font-size: clamp(80px, 10vw, 200px);
+        color: $color_one;
+        text-align: center;
+        font-weight: bolder;
+        padding: 100px 0px;
+        display: block; 
+        line-height: 50px;
+        @include media-md {
+           line-height: 64px;
+        }   
+        
+        span{
+            position: absolute;
+            color: $color_two;
+            font-size: clamp(20px ,8vw,40px);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color:transparent;
+            -webkit-text-stroke: 3px $color_two;
+        }
+    }
+
+    .demo__projects{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-block-end: 30px;
+        @include media-md {
+            justify-content: center;
+        }
+    }
+}

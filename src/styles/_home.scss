@@ -1,16 +1,19 @@
 @import "./variables";
 .home__area{
     height:calc(100vh - 90px) ;
-    background: url("../assets/spring.svg");
-    background-size: 4.2em;
-    background-position:top left;
-    background-repeat: no-repeat;
-    text-shadow: #000 0px 0px 2px;
+    // background: url("../assets/spring.svg");
+    // background-size: 4.2em;
+    // background-position:top left;
+    // background-repeat: no-repeat;
     display: grid;
     place-items: center;
+    padding: 0 20px;
+    @include media-md {
+
+    }
     .home__image{
-        height: 400px;
-        width: 300px;
+        max-height: 377px;
+        max-width: 309px;
         position: relative;
         overflow: hidden;
       }
@@ -18,7 +21,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-        transition: all .5s ;
+        transition: all .5s ease;
         filter: grayscale(100%);
         &:hover{
             filter: grayscale(10%)
@@ -30,8 +33,8 @@
     }
     .link__icon{
       background: rgba(0, 0, 0, 0.4);
-      height: 80px;
-      width: 80px;
+      height: 70px;
+      width: 70px;
       display: grid;
       place-items: center;
       position: absolute;
@@ -41,13 +44,13 @@
       z-index: 10;
       cursor: pointer;
       transition: all 0.25s ease-in-out;
-      font-size: 50px;
+      font-size: 40px;
       color: $color_bg;
       &:hover{
         transform: scale(1);
         background: $color_one;
         color: black;
-        font-size:30px ;
+        font-size:20px ;
       }
     }
   }

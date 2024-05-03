@@ -4,13 +4,14 @@
     // max-height:calc(100vh - 90px);
     display: flex;
     align-items: center;
+   
     .top__area{
         max-width: 1050px;
+        padding: 0 20px;
         .prot__gretting{
             font-family: 'Overused-Grotesk';
-            font-weight: medium;
-            font-size: 30px;
-            padding:0 20px;
+            font-weight: 500;
+            font-size: clamp(20px, 7vw, 45px);
             color: $color_two;
 
         }
@@ -18,16 +19,13 @@
             font-family: 'Overused-Grotesk';
             text-transform: uppercase;
             font-weight: bolder;
-            font-size: clamp(30px, 8vw, 70px);
+            font-size: clamp(25px, 7vw, 70px);
             color: $color_one;
-            padding:0 20px;
         }
         .prot__image{
             max-width: 1030px;
             max-height: 400px;
             overflow: hidden;
-            border: 10px solid #f3f3f3;
-            border-radius: 20px;
         }
         img{
             width: 100%;

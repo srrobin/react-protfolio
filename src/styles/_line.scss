@@ -27,8 +27,8 @@
         }
         span{
             position: absolute;
-            color: $color_one;
-            left: -62px;
+            color: #A6A695;
+            left: -45px;
             font-size: 70px;
             rotate: 0deg;
             z-index: -3;
@@ -36,13 +36,14 @@
             @include media-md{
                 font-size: 70px;
                 top: -30px;
+                left: -30px;
             }
         }
     }
     .about__desc{
         color: $color_two;
         font-family: 'proximanovacond';
-        font-weight: bold;
+        font-weight: medium;
         line-height: 40px;
     }
     .line__line{

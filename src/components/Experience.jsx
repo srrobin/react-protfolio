@@ -1,5 +1,6 @@
 import React from 'react';
 import SingleAbout from './SingleAbout';
+import cv from "./pdf/cv1.pdf"
 const tagYeallow = {
     color:"#d48806", 
     background:"#fffbe6", 
@@ -11,7 +12,12 @@ const tagYeallow = {
 const Experience = () => {
     return (
         <div>
-            <SingleAbout  text="my experience "sub="xp" yes={true}> 
+            <SingleAbout  
+            text="my experience"
+            sub="xp"
+            yes={true}
+            link={cv}
+            > 
            
                <ul>  
                  <li>🢅 I worked for 1 <sup>➕</sup> years as intern plus junior front end  DEVELOPER  at <span style={tagYeallow}>Hypertag Solution Ltd, Bangladesh </span></li>

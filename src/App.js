@@ -5,20 +5,20 @@ import Protfolio from './components/Protfolio';
 import "./App.css"
 import Navbar from './components/Navbar';
 import {  AnimatePresence } from "framer-motion"
+import ProjectExplor from './components/ProjectExplor';
+import Experienced from './components/Experienced';
 
 const App = () => {
   const location = useLocation();
-  const imgProperty = {
-    height: 400,
-    width: 300,
-  };
   return (
     <main>
       <Navbar />
       <AnimatePresence initial={false} mode='wait'>
       <Routes  location={location} key={location.pathname}>
-         <Route path="/" element={<Home imgProperty={imgProperty}/>} />
-          <Route path="/robin" element={<Protfolio imgProperty={imgProperty} />}/>
+         <Route path="/" element={<Home />} />
+          <Route path="/robin" element={<Protfolio  />}/>
+          <Route path="/robin/demo-work" element={<ProjectExplor/>}/>
+          <Route path="/robin/experienced" element={<Experienced/>}/>
       </Routes>
       </AnimatePresence>
     </main>

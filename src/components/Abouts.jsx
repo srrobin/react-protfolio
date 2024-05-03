@@ -1,5 +1,4 @@
 import React from 'react';
-import SingleAbout from './SingleAbout';
 import Technology from './Technology';
 import ToolBox from './ToolBox';
 import Experience from './Experience';

@@ -14,9 +14,13 @@
         left: 50%;
         transform: translate(-50%);
         top: -13px;
-        border-radius: 17px;
+        border-radius: 11px;
         font-size: 25px;
         color: #050002;
+        @include media-md{
+            top: -13px;
+            white-space: nowrap;
+        }
         &:before {
             position: absolute;
             content: "";
@@ -27,6 +31,9 @@
             box-shadow: 10px -10px   $color_subg;
             left: -25px;
             top: 13px;
+            @include media-md{
+                top: 13px;
+            }
         }
         &:after { 
             position: absolute;
@@ -38,6 +45,9 @@
             box-shadow: -10px -10px  $color_subg;
             right: -25px;
             top: 13px;
+            @include media-md{
+                top: 13px;
+            }
         }
     }
 
@@ -50,7 +60,7 @@
         color:  $color_one;;
        .contact__section{
         margin-block-start: 85px;
-        background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+        background-image: url("../assets/mosaic.png");
         padding: 15px;
         border-radius: 10px;
          .contact__quote{

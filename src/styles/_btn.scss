@@ -23,20 +23,20 @@
   }
 .simple__link__icon{
   background: $extra_two;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   display: grid;
   place-items: center;
   border-radius: 50%;
   z-index: 115;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
-  font-size: 50px;
+  font-size: 40px;
   color: $color_bg;
     &:hover{
-      transform: scale(1);
+      transform: scale(1.1);
       background: $color_one;
       color: black;
-      font-size:30px ;
+      font-size:20px ;
     }
   }

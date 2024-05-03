@@ -1,12 +1,12 @@
 import React from 'react';
 import LinkRoundLinkBtn from './srbutton/LinkRoundLinkBtn';
 
-const SingleAbout = ({text, sub, children,yes}) => {
+const SingleAbout = ({text, sub, children,yes, link}) => {
     return (
         <div className='line'>
             <div className='line__text'>{text} <span>{sub}</span></div>
             <div className='about__desc'>{children}</div>
-            {yes &&  <LinkRoundLinkBtn />}
+            {yes &&  <LinkRoundLinkBtn link={link}/>}
            
         </div>
     );
