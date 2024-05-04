@@ -7,7 +7,7 @@ import ProtImage from '../assets/protfolio.png';
 import LogImage from '../assets/login.png';
 import CrudImage from '../assets/crud.png';
 import QrImage from '../assets/qr.png';
-import cv from '../components/pdf/cv1.pdf';
+import cv from '../components/pdf/cvup.pdf';
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";

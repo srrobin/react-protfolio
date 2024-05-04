@@ -1,6 +1,6 @@
 import React from 'react';
 import SingleAbout from './SingleAbout';
-import cv from "./pdf/cv1.pdf"
+import cv from "./pdf/cvup.pdf"
 const tagYeallow = {
     color:"#d48806", 
     background:"#fffbe6", 
