@@ -1,6 +1,6 @@
 import React from 'react';
 import { GoArrowUpRight } from "react-icons/go";
-import protImg from "../assets/rs.jpg";
+import protImg from "../assets/home.jpg";
 import { Link } from 'react-router-dom';
 
 

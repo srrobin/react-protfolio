@@ -1,251 +1,209 @@
-import HomeImage from './assets/images/sa.png';
-import ProtfolioImage from './assets/images/sa.png';
+import HomeImage from '../assets/home.jpg';
+import HeroImage from '../assets/hero.jpg';
+import PetImage from '../assets/petclinic.png';
+import QuoteImage from '../assets/quote.png';
+import ProtImage from '../assets/protfolio.png';
+import LogImage from '../assets/login.png';
+import CrudImage from '../assets/crud.png';
+import QrImage from '../assets/qr.png';
+import cv from '../components/pdf/cv1.pdf';
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 const meta = {
   title: "srrobin",
   description:
     "frontend software developer",
 };
-
-const greetingText = "Hey you, I'm";
-const nameText = "sayam rahman robin";
-
-
-const aboutText = {
+const homePage = {
+      image_url: HomeImage,
+};
+const heroSection = {
+   greetingText : "Hey you, I'm",
+   nameText : "sayam rahman robin",
+   image_url: HeroImage,
+}
+const hiddenText = {
+   lockText : "Every soul shall taste death  al—Quran 3:185"
+}
+const aboutSection = {
   title: "ABOUT ME",
   sub: "abt",
-  aboutme:
+  link: "not yeat",
+  desc:
     "I AM A SELF 👩‍💻TAUGHT CREATIVE FRONT-END DEVELOPER AND WEB DESIGNER BASED IN DHAKA, BANGLADESH . I ESPECIALLY LIKE TO WORK ON THE FRONT END OF SOFTWARE. AS A FRONT-END DEVELOPER AND WEB DESIGNER, HELPING STARTUPS GAIN THEIR UNFAIR ADVANTAGE. ALTHOUGH I MAJORED IN MATH, I LOVE CODING. WHEN I'M NOT DEVELOPING OR DESIGNING, I ENJOY STUDYING OR TRAVELING AROUND THE VARIOUS RURAL AREAS OF BANGLADESH.",
 };
-const educationText = {
+const educationSection = {
   title: "MY EDUCATION",
   sub: "edu",
-  link: "edu",
-  aboutme:
+  link: cv,
+  desc:
     "I AM A GRADUATE OF✏️ DHAKA COLLEGE AT NATIONAL UNIVERSITY, WHERE I EARNED B.SC. IN 🍀 MATHEMATICS.",
 };
+const experienceSection = {
+  title: "MY EXPERIENCE",
+  sub: "xp",
+  link: cv,
+  desc:[ 
+    {
+      inst_name: "HYPERTAG SOLUTION LTD, BANGLADESH",
+      inst_desc: "🢅 I WORKED FOR 1 ➕ YEARS AS INTERN PLUS JUNIOR FRONT END DEVELOPER AT",
+    },
+    {
+      inst_name: "CREATIVE IT SOFT LTD, BANGLADESH",
+      inst_desc: "🢅 AFTER THAT I WORKED AS FRONT END SOFTWARE DEVELOPER FOR 2 YEARS ✌ AT",
+    },
+    {
+      inst_name: "",
+      inst_desc: "🢅 IN BETWEEN, I WORKED AS A DIRECTOR OF A COACHING CENTER FOR 3 YEARS AND WORKED FOR SOME LOCAL CLIENTS AS A WEB DESIGNER .",
+    },
+  ]
+};
 
-const demowork = [
+const expertisesSection = {
+  title: "MY EXPERTISES",
+  sub: "exp",
+  link: "not yeat",
+  desc: "not yeat",
+  full_expart:[ "WEB DEVELOPMENT", "SOFTWARE DEVELOPMENT","WEB DESIGN"],
+};
+
+const toolSection = {
+  title: "MY DEGITAL TOOL BOX",
+  sub: "tool",
+  link: "not yeat",
+  desc: "not yeat",
+  full_expart:[ "HTML", "CSS","JAVASCRIPT","REACTJS","SASS"],
+  mid_expart:[ "REDUX","NEXTJS", "TAILWIND CSS"],
+  low_expart:[ "DJANGO", "DRF","MONGODBG"],
+};
+
+const staticDemo = [
   {
-    project_title:'React Image Dev',
-    live_demo_link:'https://react-image-dev.netlify.app/',
-    github_link:'https://github.com/srrobin/react-image-dev',
-    project_image:'images/imgapp.png',
+    project_title:'Petclinic',
+    live_demo_link:'https://petclinics.netlify.app',
+    github_link:'https://github.com/srrobin/petclinic',
+    project_image:PetImage,
     tech:["reactjs","sass","ant-design"],
     reverse:true
-},
+  },
   {
-    project_title:'React Image Dev',
-    live_demo_link:'https://react-image-dev.netlify.app/',
-    github_link:'https://github.com/srrobin/react-image-dev',
-    project_image:'images/imgapp.png',
-    type:'react'
-},
-  {
-    project_title:'React Image Dev',
-    live_demo_link:'https://react-image-dev.netlify.app/',
-    github_link:'https://github.com/srrobin/react-image-dev',
-    project_image:'images/imgapp.png',
-    type:'react'
-},
-  {
-    project_title:'React Image Dev',
-    live_demo_link:'https://react-image-dev.netlify.app/',
-    github_link:'https://github.com/srrobin/react-image-dev',
-    project_image:'images/imgapp.png',
-    type:'react'
-},
-  {
-    project_title:'React Image Dev',
-    live_demo_link:'https://react-image-dev.netlify.app/',
-    github_link:'https://github.com/srrobin/react-image-dev',
-    project_image:'images/imgapp.png',
-    type:'react'
-},
-  {
-    project_title:'React Image Dev',
-    live_demo_link:'https://react-image-dev.netlify.app/',
-    github_link:'https://github.com/srrobin/react-image-dev',
-    project_image:'images/imgapp.png',
-    type:'react'
-},
-  {
-    project_title:'React Image Dev',
-    live_demo_link:'https://react-image-dev.netlify.app/',
-    github_link:'https://github.com/srrobin/react-image-dev',
-    project_image:'images/imgapp.png',
-    type:'react'
-},
-  {
-    project_title:'React Image Dev',
-    live_demo_link:'https://react-image-dev.netlify.app/',
-    github_link:'https://github.com/srrobin/react-image-dev',
-    project_image:'images/imgapp.png',
-    type:'react'
-},
-  {
-    project_title:'React Image Dev',
-    live_demo_link:'https://react-image-dev.netlify.app/',
-    github_link:'https://github.com/srrobin/react-image-dev',
-    project_image:'images/imgapp.png',
-    type:'react'
-},
-  {
-    project_title:'React Image Dev',
-    live_demo_link:'https://react-image-dev.netlify.app/',
-    github_link:'https://github.com/srrobin/react-image-dev',
-    project_image:'images/imgapp.png',
-    type:'react'
-},
-
+    project_title:'POS System',
+    live_demo_link:'https://pos-systems.netlify.app/',
+    github_link:'https://github.com/srrobin/pos-system.git',
+    project_image:PetImage,
+    tech:[
+      "reactjs",
+      "ant-design",
+      "scss",
+      "tanstack-query",
+    ],
+    reverse:true
+  },
+  
 ];
 
-const skills = [
+const demoSection = [
   {
-    name: "3D Animation",
-    value: 90,
+    project_title:'Petclinic',
+    live_demo_link:'https://petclinics.netlify.app',
+    github_link:'https://github.com/srrobin/petclinic',
+    project_image:PetImage,
+    tech:["reactjs","sass","ant-design"],
+    reverse:true
   },
   {
-    name: "3D Character Animation",
-    value: 85,
+    project_title:'POS System',
+    live_demo_link:'https://pos-systems.netlify.app',
+    github_link:'https://github.com/srrobin/pos-system.git',
+    project_image:PetImage,
+    tech:[
+      "reactjs",
+      "ant-design",
+      "scss",
+      "tanstack-query",
+    ],
+    reverse:true
   },
   {
-    name: "3D Enverionment Desing",
-    value: 80,
+    project_title:'protfolio@2024',
+    live_demo_link:'https://demo-react-login.netlify.app',
+    github_link:'https://github.com/srrobin/demo-react-login-design',
+    project_image:LogImage,
+    tech:[
+      "reactjs",
+      "cssmodule",
+      "responsive",
+    ],
+    reverse:true
   },
   {
-    name: "3D Lighting",
-    value: 60,
+    project_title:'protfolio@2024',
+    live_demo_link:'https://srrobin.vercel.app',
+    github_link:'https://github.com/srrobin/react-protfolio',
+    project_image:ProtImage,
+    tech:[
+      "reactjs",
+      "scss",
+      "framer-motion",
+    ],
+    reverse:true
   },
   {
-    name: "3D Rendering",
-    value: 85,
-  },
-  {
-    name: "3D Visualization",
-    value: 85,
+    project_title:'demo-crud',
+    live_demo_link:'https://demo-crud.netlify.app/',
+    github_link:'https://github.com/srrobin/e-crud',
+    project_image:CrudImage,
+    tech:[
+      "reactjs",
+      "react-bootstra",
+      "i18next",
+      "tanstack-query",
+    ],
+    reverse:true
   },
 ];
 
-const services = [
-  {
-    title: "3D Animation",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-  },
-  {
-    title: "3D Enverionment Desing",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-  },
-  {
-    title: "3D Rendering",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-  },
-];
-
-const dataportfolio = [
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    desctiption:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/800/?grayscale",
-    desctiption:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    desctiption:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/600/?grayscale",
-    desctiption:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/300/?grayscale",
-    desctiption:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    desctiption:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-
-  {
-    img: "https://picsum.photos/400/600/?grayscale",
-    desctiption:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/300/?grayscale",
-    desctiption:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    desctiption:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/550/?grayscale",
-    desctiption:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    desctiption:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    desctiption:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-];
-
-const contactConfig = {
-  YOUR_EMAIL: "sadhankirtonia98@gmail.com",
-  YOUR_FONE: "01799739432",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-
-  YOUR_SERVICE_ID: "service_id",
-  YOUR_TEMPLATE_ID: "template_id",
-  YOUR_USER_ID: "user_id",
+const footerSection = {
+  fist_col_quote: "I Feel Very Honored That The Hawaiian Spirits Chose To Contact Me.",
+  fist_col_quoteImage:QuoteImage,
+  second_col_number:"+880 1302 700 760",
+  second_col_email:"srrobin07@gmail.com",
+  second_col_skype:"srrobin07",
+  third_col_cvlink:cv,
+  third_col_qr:QrImage,
+  fourth_col:[
+    { title: "WhatsApp", icon: <IoLogoWhatsapp style={{color: '#3FE05C'}} /> },
+    { title: "facebook", icon: <FaFacebook style={{color: '#1469C7'}}/> },
+    { title: "Linkedin", icon:<FaLinkedin style={{color: '#0981BF'}}/> },
+    { title: "github", icon: <FaGithub style={{color: ''}}/> },
+  ],
 };
 
-const socialprofils = {
-  facebook: "https://www.facebook.com/sadhankirtonia98",
-  linkedin: "https://www.linkedin.com/in/sadhan-kirtonia/",
-  twitter: "https://twitter.com/sadhan_kirtonia",
-  instagram: "https://www.instagram.com/sadhan_kirtonia98/",
-  artstation: "https://www.artstation.com/sadhankirtonia",
-  youtube: "https://youtube.com/@sadhankirtonia",
-};
+const ideasSection=[
+  {
+    title:"SOFTWARE DEVELOPMENT LIFE CYCLE (SDLC)",
+    ideaImage:"",
+    createDate:"1 MAY, 2024",
+    subTitle:"",
+    desc:"THE SOFTWARE DEVELOPMENT LIFE CYCLE (SDLC) CREATES AN ENVIRONMENT WHERE BUSINESSES AND IT DEPARTMENTS CAN COLLABORATE TO PRODUCE HIGH-QUALITY SOFTWARE. THE SYSTEMATIC APPROACH TO PLANNING, DESIGNING, TESTING, AND DEPLOYING SOFTWARE PRODUCTS MAKES SDLC AN INDISPENSABLE PART OF SUCCESSFUL SOFTWARE PROJECTS. THE SDLC EVOLVES WITH TECHNOLOGY. IN THIS ARTICLE, WE’LL LOOK AT THE STATE OF THE SOFTWARE DEVELOPMENT LIFE CYCLE IN 2024 AND CONSIDER HOW ITS PRINCIPLES CAN BE USED TO CREATE MORE EFFICIENT SOFTWARE PRODUCTS. THE SOFTWARE DEVELOPMENT LIFE CYCLE (SDLC) IS A SET OF STAGES, ACTIVITIES, AND TASKS THAT SOFTWARE PROJECTS GO THROUGH. THE PROCESS OUTLINES HOW SOFTWARE DEVELOPMENT TEAMS BUILD, TEST, DEPLOY, AND MAINTAIN THEIR SOFTWARE TO ACHIEVE TOP QUALITY ON TIME AND WITHIN BUDGET. SDLC BEGINS WITH THE PLANNING PHASE, WHERE THE DEVELOPMENT TEAM DEFINES AND ANALYZES THE PROJECT REQUIREMENTS, GOALS, AND TIMELINE. AFTER THE PLANNING PHASE, THE TEAM CREATES THE PROTOTYPE BY DESIGNING, BUILDING, AND INTEGRATING DIFFERENT COMPONENTS. NEXT, THE DEVELOPERS EVALUATE THE PROJECT, INVESTIGATE ANY REPORTED ISSUES, AND FIX BUGS TO ENSURE THE SOFTWARE WORKS EFFICIENTLY BEFORE THE OFFICIAL LAUNCH. WHILE THE GOAL IS TO ENSURE A QUALITY AND TIMELY DEVELOPMENT PROCESS, THE DEVELOPMENT CYCLE ALSO INVOLVES ROUTINE MAINTENANCE TO ENSURE THE SOFTWARE REMAINS RUNNING WITHOUT HITCHES. WHEN IMPLEMENTED CORRECTLY, THESE CORE SDLC ACTIVITIES PROVIDE SEVERAL BENEFITS. THE FOLLOWING SECTIONS WILL DIVE MORE DEEPLY INTO THE IMPORTANCE OF SDLC TO BUSINESSES AND DEVELOPMENT TEAMS."
+  }
+] ;
+
 export {
   meta,
-  dataportfolio,
-  demowork,
-  skills,
-  services,
-  contactConfig,
-  socialprofils,
+  homePage,
+  heroSection,
+  hiddenText,
+  aboutSection,
+  educationSection,
+  experienceSection,
+  expertisesSection,
+  toolSection,
+  staticDemo,
+  demoSection,
+  footerSection,
+  ideasSection,
 };
