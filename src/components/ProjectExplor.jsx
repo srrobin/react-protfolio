@@ -4,33 +4,33 @@ import ProjectUpTitle from './ProjectUpTitle';
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
+import {demoSection} from '../utils/data';
 
 
 
 
 const ProjectExplor = () => {
-    return (
-        <div className='demo__projects__area'> 
 
+    return (
+        <> 
+        <div className='demo__projects__area'> 
         <div className='demo__title__area'>
              demo work
             <span>explore</span>
         </div>
-            <div className='demo__projects'>
-                <ProjectDownTitle order="1"/>
-                <ProjectUpTitle  order="2"/>
+        <div className='demo__projects'>
+        {demoSection.map((item) => ( 
+            <div className='' style={{order:item.order,marginBottom: "50px"}} key={item.id}>
+                {item.type === 1 ? (
+                    <ProjectDownTitle staticDemo={item} />
+                ) : (
+                    <ProjectUpTitle staticDemo={item} />
+                )}
             </div>
-            <div className='demo__projects'>
-                <ProjectDownTitle order="2"/>
-                <ProjectUpTitle order="1"/>
-            </div>
-            <div className='demo__projects'>
-                <ProjectDownTitle  order="1"/>
-                <ProjectUpTitle  order="2"/>
-            </div>
-
-
-            <div className='optional__section'>
+        ))}
+        </div>
+        </div>
+        <div className='optional__section'>
                 <div className='optional__title'>
                     <span className='title__link'> 
                     let's move 
@@ -45,8 +45,8 @@ const ProjectExplor = () => {
                 </div>
                 {/* <LinkRoundLinkBtn /> */}
             </div>
-            <Footer />
-        </div>
+        <Footer />
+        </>
     );
 };
 

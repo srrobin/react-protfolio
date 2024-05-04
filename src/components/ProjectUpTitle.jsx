@@ -1,22 +1,26 @@
 import React from 'react';
-import projectImage from "../assets/pro2.jpg"
 import Srbutton from './srbutton/Srbutton';
 import RoundLinkBtn from './srbutton/RoundLinkBtn';
 
-const ProjectUpTitle = ({order}) => {
+const ProjectUpTitle = ({staticDemo}) => {
     return (
-        <div className='project__uptitle items' style={{order:order}}>
-
+        <div className='project__uptitle items' style={{order:staticDemo.order}}>
            <div className='project__about'>
-             <div className='project__title'>petclinic</div>
-             <div className='project__desc'>The react PetClinic is a sample application designed to show</div>
-             <Srbutton textTitle=" github link"/>
+             <div className='project__title'>{staticDemo.project_title}</div>
+             <div className='project__desc'>{staticDemo.project_desc}</div>
+             <div className='project__use'>
+              <ul>
+                {staticDemo.tech.map((item) =>(
+                   <li>{item}</li>
+                ))}
+              </ul>
+             </div>
+             <Srbutton textTitle=" github link" link={staticDemo.github_link}/>
            </div>
            <div className='project__image'>
-             <img src={projectImage} alt=''/>
-             <RoundLinkBtn />
+             <img src={staticDemo.project_image} alt=''/>
+             <RoundLinkBtn link={staticDemo.live_demo_link}/>
            </div>
-
         </div>
     );
 };

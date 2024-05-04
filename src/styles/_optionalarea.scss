@@ -17,7 +17,7 @@
         }
         .title__link{
             font-weight: bold;
-            color: #2E2E2E;
+            color: $color_two;
             display: flex;
             align-items: center;
             font-size: 33px;
@@ -25,9 +25,11 @@
             gap: 20px;
             .optional__link{
                 transition: all .50s ease;
+                color:$color_two;
                 &:hover{
                   transform: scale(1.2);
                   cursor: pointer;
+                  color:$color_two
                 }
             }
         }
@@ -48,8 +50,19 @@
 }
 
 .optional__area{
-    padding: 0 20px;
+    padding: 100px 20px;
+    @include media-md {
+        padding: 50px 20px;
+     }
     .single__post{
+        margin-bottom: 50px;
+        .single__post__title{
+            font-size:clamp(20px ,7vw, 45px);
+            font-weight: bold;
+            font-family: 'Overused-Grotesk';
+            color: $color_two;
+            margin-block-end: 20px;
+        }
         .single__post__img{
             max-width: 1030px;
             max-height: 500px;
@@ -58,6 +71,16 @@
               width: 100%;
               object-fit: cover;
             }
+        }
+        .single__post__date{
+          font-size: 16px;  
+          color: $color_one;
+          font-weight: bolder;
+          margin: 20px 0;
+        }
+        .single__post__desc{
+         line-height: 1.60;
+         text-transform: capitalize;
         }
     }
 }

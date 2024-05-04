@@ -1,6 +1,7 @@
 import HomeImage from '../assets/home.jpg';
 import HeroImage from '../assets/hero.jpg';
 import PetImage from '../assets/petclinic.png';
+import PosImage from '../assets/pos.png';
 import QuoteImage from '../assets/quote.png';
 import ProtImage from '../assets/protfolio.png';
 import LogImage from '../assets/login.png';
@@ -83,52 +84,60 @@ const toolSection = {
 const staticDemo = [
   {
     project_title:'Petclinic',
+    project_desc:'This app is designed for pet clinic front desk personnel to register.',
     live_demo_link:'https://petclinics.netlify.app',
     github_link:'https://github.com/srrobin/petclinic',
     project_image:PetImage,
     tech:["reactjs","sass","ant-design"],
-    reverse:true
   },
   {
     project_title:'POS System',
+    project_desc:'This app is designed for pet clinic front desk personnel to register.',
     live_demo_link:'https://pos-systems.netlify.app/',
     github_link:'https://github.com/srrobin/pos-system.git',
-    project_image:PetImage,
+    project_image:PosImage,
     tech:[
       "reactjs",
       "ant-design",
       "scss",
       "tanstack-query",
     ],
-    reverse:true
   },
   
 ];
 
 const demoSection = [
-  {
+  { 
+    id:1,
     project_title:'Petclinic',
+    project_desc:'This app is designed for pet clinic front desk personnel to register.',
     live_demo_link:'https://petclinics.netlify.app',
     github_link:'https://github.com/srrobin/petclinic',
     project_image:PetImage,
     tech:["reactjs","sass","ant-design"],
-    reverse:true
+    order:1,
+    type:1,
   },
   {
+    id:2,
     project_title:'POS System',
+    project_desc:'This app is designed for pet clinic front desk personnel to register.',
     live_demo_link:'https://pos-systems.netlify.app',
     github_link:'https://github.com/srrobin/pos-system.git',
-    project_image:PetImage,
+    project_image:PosImage,
     tech:[
       "reactjs",
       "ant-design",
       "scss",
       "tanstack-query",
     ],
-    reverse:true
+    order:1,
+    type:2,
   },
   {
-    project_title:'protfolio@2024',
+    id:3,
+    project_title:'Login page',
+    project_desc:'This app is designed for pet clinic front desk personnel to register.',
     live_demo_link:'https://demo-react-login.netlify.app',
     github_link:'https://github.com/srrobin/demo-react-login-design',
     project_image:LogImage,
@@ -137,22 +146,13 @@ const demoSection = [
       "cssmodule",
       "responsive",
     ],
-    reverse:true
+    order:1,
+    type:2,
   },
   {
-    project_title:'protfolio@2024',
-    live_demo_link:'https://srrobin.vercel.app',
-    github_link:'https://github.com/srrobin/react-protfolio',
-    project_image:ProtImage,
-    tech:[
-      "reactjs",
-      "scss",
-      "framer-motion",
-    ],
-    reverse:true
-  },
-  {
+    id:5,
     project_title:'demo-crud',
+    project_desc:'This app is designed for pet clinic front desk personnel to register.',
     live_demo_link:'https://demo-crud.netlify.app/',
     github_link:'https://github.com/srrobin/e-crud',
     project_image:CrudImage,
@@ -162,8 +162,26 @@ const demoSection = [
       "i18next",
       "tanstack-query",
     ],
-    reverse:true
+    order:2,
+    type:1,
   },
+  {
+    id:4,
+    project_title:'protfolio@2024',
+    project_desc:'This app is designed for pet clinic front desk personnel to register.',
+    live_demo_link:'https://srrobin.vercel.app',
+    github_link:'https://github.com/srrobin/react-protfolio',
+    project_image:ProtImage,
+    tech:[
+      "reactjs",
+      "scss",
+      "framer-motion",
+    ],
+    order:2,
+    type:1,
+
+  },
+
 ];
 
 const footerSection = {

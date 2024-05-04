@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectUpTitle from './ProjectUpTitle';
 import ProjectDownTitle from './ProjectDownTitle';
 import LinkRoundLinkBtn from './srbutton/LinkRoundLinkBtn';
+import {staticDemo} from "../utils/data"
 
 const ShortProject = () => {
     return (
@@ -11,8 +12,8 @@ const ShortProject = () => {
                 Explor All <LinkRoundLinkBtn link="/robin/demo-work"/>
             </div>
             <div className='short__project'>
-                <ProjectDownTitle />
-                <ProjectUpTitle />
+                <ProjectDownTitle staticDemo={staticDemo[0]}/>
+                <ProjectUpTitle  staticDemo={staticDemo[1]}/>
             </div>
         </div>
     );
