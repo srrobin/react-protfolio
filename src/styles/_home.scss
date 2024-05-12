@@ -1,6 +1,6 @@
 @import "./variables";
 .home__area{
-    height:calc(100vh - 90px) ;
+    height:calc(100vh - 160px) ;
     // background: url("../assets/spring.svg");
     // background-size: 4.2em;
     // background-position:top left;
@@ -9,13 +9,18 @@
     place-items: center;
     padding: 0 20px;
     @include media-md {
-
+      display: unset;
+      place-items: unset;
+      padding: 0px;
     }
     .home__image{
         max-height: 377px;
         max-width: 309px;
         position: relative;
         overflow: hidden;
+        @include media-md {
+          max-width:100%;
+        }
       }
     img{
         height: 100%;
