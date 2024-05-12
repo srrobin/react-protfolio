@@ -11,6 +11,7 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Srbutton from "./srbutton/Srbutton";
 import qrCode from "../assets/qr.png";
+import { Link } from 'react-router-dom';
 
 
 
@@ -56,7 +57,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='footer__copyright'> 
-            protfolio ©{new Date().getFullYear()} Created by SRROBIN
+            protfolio ©{new Date().getFullYear()} Created by <Link to="/" style={{color:"#a6a695",textDecoration: "underline"}}>SRROBIN</Link>
         </div>
         </>
     );
