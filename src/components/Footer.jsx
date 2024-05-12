@@ -1,19 +1,13 @@
 import React from 'react';
-import quoteImage from "../assets/quote.png"
 import { BiSolidQuoteLeft } from "react-icons/bi";
 import { BsTelephoneInboundFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaSkype } from "react-icons/fa";
 import SingleSocial from './SingleSocial';
-import { IoLogoWhatsapp } from "react-icons/io";
-import { FaFacebook } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
 import Srbutton from "./srbutton/Srbutton";
-import qrCode from "../assets/qr.png";
 import { Link } from 'react-router-dom';
 import {footerSection} from "../utils/data"
-
+import { GoArrowUpRight } from "react-icons/go"
 
 
 const Footer = () => {
@@ -28,6 +22,7 @@ const Footer = () => {
                      <div className='footer__quote'><BiSolidQuoteLeft /></div>
                      {footerSection.fist_col_quote}
                     </div>
+                    <Link className='footer__cv' to={footerSection.third_col_cvlink} target={"_blank"}><img src={footerSection.fist_col_cvImage} alt=""/></Link>
                     <div className='quote__image'> 
                      <img  src={footerSection.fist_col_quoteImage} alt='' /> 
                     </div>
@@ -44,18 +39,16 @@ const Footer = () => {
                 </dl>
             </div>
               <div className='cvdownload__section'>
-                <Srbutton  textTitle="download cv"/>
+                {/* <Srbutton  textTitle="download cv" link={footerSection.third_col_cvlink}/> */}
+                {/* <Link to={footerSection.third_col_cvlink} target={"_blank"}>Download Cv <GoArrowUpRight/></Link> */}
                     <div className='qr__code'>
-                        <img src={qrCode} alt=''/>
+                        <img src={footerSection.third_col_qr} alt=''/>
                     </div>
                 </div>
               <div className='social__section'>
                 {footerSection?.fourth_col.map((item)=>(
-               <SingleSocial title={item.title} icon={item.icon} />
+               <SingleSocial title={item.title} icon={item.icon} link={item.link}/>
                 ))} 
-               {/* <SingleSocial title="facebook" icon={<FaFacebook style={{color: '#1469C7'}}/>} />
-               <SingleSocial title="Linkedin" icon={<FaLinkedin style={{color: '#0981BF'}}/>} />
-               <SingleSocial title="github" icon={<FaGithub style={{color: ''}}/>} /> */}
                </div>
             </div>
         </div>

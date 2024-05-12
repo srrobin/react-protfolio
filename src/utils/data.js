@@ -6,7 +6,8 @@ import QuoteImage from '../assets/quote.png';
 import ProtImage from '../assets/protfolio.png';
 import LogImage from '../assets/login.png';
 import CrudImage from '../assets/crud.png';
-import QrImage from '../assets/qr.png';
+import QrImage from '../assets/qr22.png';
+import CvImage from '../assets/cv1.png';
 import cv from '../components/pdf/cvup.pdf';
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
@@ -34,7 +35,7 @@ const aboutSection = {
   sub: "abt",
   link: "not yeat",
   desc:
-    "I AM A SELF 👩‍💻TAUGHT CREATIVE FRONT-END DEVELOPER AND WEB DESIGNER BASED IN DHAKA, BANGLADESH . I ESPECIALLY LIKE TO WORK ON THE FRONT END OF SOFTWARE. AS A FRONT-END DEVELOPER AND WEB DESIGNER, HELPING STARTUPS GAIN THEIR UNFAIR ADVANTAGE. ALTHOUGH I MAJORED IN MATH, I LOVE CODING. WHEN I'M NOT DEVELOPING OR DESIGNING, I ENJOY STUDYING OR TRAVELING AROUND THE VARIOUS RURAL AREAS OF BANGLADESH.",
+    `I AM A SELF 👩‍💻TAUGHT CREATIVE FRONT END DEVELOPER AND WEB DESIGNER BASED IN DHAKA, BANGLADESH . I ESPECIALLY LIKE TO WORK ON THE FRONT END OF SOFTWARE. AS A FRONT-END DEVELOPER AND WEB DESIGNER, HELPING STARTUPS GAIN THEIR UNFAIR ADVANTAGE. ALTHOUGH I MAJORED IN MATH, I LOVE CODING. WHEN I'M NOT DEVELOPING OR DESIGNING, I ENJOY STUDYING OR TRAVELING AROUND THE VARIOUS RURAL AREAS OF BANGLADESH.`,
 };
 const educationSection = {
   title: "MY EDUCATION",
@@ -187,16 +188,32 @@ const demoSection = [
 const footerSection = {
   fist_col_quote: "I Feel Very Honored That The Hawaiian Spirits Chose To Contact Me.",
   fist_col_quoteImage:QuoteImage,
+  fist_col_cvImage:CvImage,
   second_col_number:"+880 1302 700 760",
   second_col_email:"srrobin07@gmail.com",
   second_col_skype:"srrobin07",
   third_col_cvlink:cv,
   third_col_qr:QrImage,
   fourth_col:[
-    { title: "WhatsApp", icon: <IoLogoWhatsapp style={{color: '#3FE05C'}} /> },
-    { title: "facebook", icon: <FaFacebook style={{color: '#1469C7'}}/> },
-    { title: "Linkedin", icon:<FaLinkedin style={{color: '#0981BF'}}/> },
-    { title: "github", icon: <FaGithub style={{color: ''}}/> },
+    { 
+      title: "WhatsApp", 
+      icon: <IoLogoWhatsapp style={{color: '#3FE05C'}} /> ,
+      link:"https://wa.me/01302700760" 
+    },
+    { 
+      title: "facebook",
+      icon: <FaFacebook style={{color: '#1469C7'}}/> ,
+      link:'https://www.facebook.com/srrobin07/',
+      },
+    { title: "Linkedin", 
+      icon:<FaLinkedin style={{color: '#0981BF'}}/> ,
+      link:'https://www.linkedin.com/in/srrobin/',
+    },
+    { 
+      title: "github", 
+      icon: <FaGithub style={{color: ''}}/> ,
+      link:'https://github.com/srrobin',
+  },
   ],
 };
 

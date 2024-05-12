@@ -71,7 +71,7 @@
          .contact__quote{
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 10px;
             @include media-md{
                 align-items: center;
             }
@@ -87,6 +87,20 @@
                 position: absolute;
                 font-size: 40px;
                 top: -40px;
+            }
+            .footer__cv{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                transition: all .50s ease;
+                padding: 10px;
+                width: 200px;
+                &:hover{
+                    transform:scale(1.1);
+                    // border: 1px dashed ;
+                    // text-decoration: underline;
+                } 
             }
             .quote__image{
                 max-height: 200px;
@@ -121,15 +135,17 @@
         align-items: center;
         gap: 10px;
         .qr__code{
-            height: 150px;
-            width: 150px;
-            border: 8px solid #191919;
-            border-radius: 16px;
+            // height: 200px;
+            // width: 200px;
+            // border: 8px solid #191919;
+            // border-radius: 16px;
         }
         img{
-            border-radius: 8px; 
+            border-radius: 6px;
             height: 100%;
-            width: 100%; 
+            width: 100%;
+            background: #ffffff;
+            padding: 6px;
         }
 
        }
