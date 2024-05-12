@@ -27,7 +27,8 @@
         }
         span{
             position: absolute;
-            color: #A6A695;
+            color: $color_one;
+            opacity: 0.5;
             left: -45px;
             font-size: 70px;
             rotate: 0deg;

@@ -157,10 +157,9 @@
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            row-gap: 9px;
+            gap: 10px;
             li{
                 background: $color_two;
-                margin-right: 10px;
                 color: $color_one;
                 padding: 2px 8px;
                 font-size: 14px;
