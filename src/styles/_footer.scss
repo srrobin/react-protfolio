@@ -57,9 +57,14 @@
         gap: 10px;
         place-items: center;
         height: 100%;
-        color:  $color_one;;
-       .contact__section{
+        color:  $color_one;
         margin-block-start: 85px;
+        transition: all .50s ease;
+        @include media-md{
+            gap: 50px;
+        }
+       .contact__section{
+        // margin-block-start: 85px;
         background-image: url("../assets/mosaic.png");
         padding: 15px;
         border-radius: 10px;
@@ -110,7 +115,7 @@
         }
        }
        .cvdownload__section{
-        margin-block-start: 85px;
+        // margin-block-start: 85px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -142,13 +147,13 @@
     align-items: center;
     justify-content: space-around;
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 16px;
     gap: 10px;
     // background: #191919;
     padding: 10px 20px;
     border: 5px solid #191919;
     border-radius: 10px;
-    transition: all .5s ease;
+    transition: all .50s ease;
     &:hover{
       transform: translateY(-3px);
       cursor: pointer;

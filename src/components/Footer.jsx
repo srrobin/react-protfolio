@@ -12,6 +12,7 @@ import { FaLinkedin } from "react-icons/fa";
 import Srbutton from "./srbutton/Srbutton";
 import qrCode from "../assets/qr.png";
 import { Link } from 'react-router-dom';
+import {footerSection} from "../utils/data"
 
 
 
@@ -25,21 +26,21 @@ const Footer = () => {
                 <div className='contact__quote'>
                     <div className='quote__text' style={{  fontFamily: "Philosopher"}}>
                      <div className='footer__quote'><BiSolidQuoteLeft /></div>
-                     I feel very honored that the Hawaiian spirits chose to contact me.
+                     {footerSection.fist_col_quote}
                     </div>
                     <div className='quote__image'> 
-                     <img  src={quoteImage} alt='' /> 
+                     <img  src={footerSection.fist_col_quoteImage} alt='' /> 
                     </div>
                 </div>
               </div>
               <div className='info__section'>
                 <dl>
                     <dt>Phone Number:</dt>
-                    <dd class="small"><BsTelephoneInboundFill style={{ color: "2FA150"}}/> +880 1302 700 760 </dd>
+                    <dd class="small"><BsTelephoneInboundFill style={{ color: "2FA150"}}/>{footerSection.second_col_number} </dd>
                     <dt>Email Number:</dt>
-                    <dd class="small"> <MdEmail style={{ color: "F7B400"}}/> srrobin07@gmail.com</dd>
+                    <dd class="small"> <MdEmail style={{ color: "F7B400"}}/> {footerSection.second_col_email}</dd>
                     <dt> Skype Number: </dt>
-                    <dd class="small"> <FaSkype  style={{ color: "#108ee9"}} /> srrobin07</dd>
+                    <dd class="small"> <FaSkype  style={{ color: "#108ee9"}} /> {footerSection.second_col_skype}</dd>
                 </dl>
             </div>
               <div className='cvdownload__section'>
@@ -48,16 +49,18 @@ const Footer = () => {
                         <img src={qrCode} alt=''/>
                     </div>
                 </div>
-              <div className='social__section'> 
-               <SingleSocial title="what's app" icon={<IoLogoWhatsapp style={{color: '#3FE05C'}}/>} />
-               <SingleSocial title="facebook" icon={<FaFacebook style={{color: '#1469C7'}}/>} />
+              <div className='social__section'>
+                {footerSection?.fourth_col.map((item)=>(
+               <SingleSocial title={item.title} icon={item.icon} />
+                ))} 
+               {/* <SingleSocial title="facebook" icon={<FaFacebook style={{color: '#1469C7'}}/>} />
                <SingleSocial title="Linkedin" icon={<FaLinkedin style={{color: '#0981BF'}}/>} />
-               <SingleSocial title="github" icon={<FaGithub style={{color: ''}}/>} />
+               <SingleSocial title="github" icon={<FaGithub style={{color: ''}}/>} /> */}
                </div>
             </div>
         </div>
         <div className='footer__copyright'> 
-            protfolio ©{new Date().getFullYear()} Created by <Link to="/" style={{color:"#a6a695",textDecoration: "underline"}}>SRROBIN</Link>
+            protfolio ©{new Date().getFullYear()} Created by <Link to="/" style={{color:"#a6a695",textDecoration: "underline"}}><i>SRROBIN</i></Link>
         </div>
         </>
     );
