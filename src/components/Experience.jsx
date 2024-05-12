@@ -1,6 +1,7 @@
 import React from 'react';
 import SingleAbout from './SingleAbout';
 import cv from "./pdf/cvup.pdf"
+import {experienceSection} from "../utils/data"
 const tagYeallow = {
     color:"#d48806", 
     background:"#fffbe6", 
@@ -13,16 +14,18 @@ const Experience = () => {
     return (
         <div>
             <SingleAbout  
-            text="my experience"
-            sub="xp"
+            text={experienceSection.title}
+            sub={experienceSection.sub}
             yes={true}
             link={cv}
             > 
            
                <ul>  
-                 <li>🢅 I worked for 1 <sup>➕</sup> years as intern plus junior front end  DEVELOPER  at <span style={tagYeallow}>Hypertag Solution Ltd, Bangladesh </span></li>
-                 <li>🢅 After that I worked as front end  SOFTWARE developer for 2 years ✌ at <span style={tagYeallow}>Creative IT Soft  LTD, BANGLADESH</span> </li>
-                 <li>🢅 In between, I worked as a director of a coaching center for 3 years and worked for some local clients as a  WEB DESIGNER .</li>
+               {experienceSection?.desc.map((item)=>(
+                 <li>{item.inst_desc}   <span style={item.inst_name ? tagYeallow : null}>
+                 {item?.inst_name}
+               </span></li>
+               ))}
                 </ul>  
            
             </SingleAbout>

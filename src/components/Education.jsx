@@ -1,18 +1,18 @@
 import React from 'react';
 import SingleAbout from './SingleAbout';
 import cv from "./pdf/cvup.pdf"
+import {educationSection} from "../utils/data"
 
 const Education = () => {
     return (
         <div>
             <SingleAbout  
-            text="my education"
-            sub="edu" 
+            text={educationSection.title}
+            sub={educationSection.sub}
             yes={true}
             link={cv}
             > 
-                <div>
-                I am a graduate of✏️ Dhaka College at National University, where I earned  B.Sc. in 🍀 Mathematics.
+                <div>{educationSection.desc}
                 </div>         
             </SingleAbout>
         </div>

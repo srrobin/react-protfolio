@@ -1,15 +1,20 @@
 import React from 'react';
 import SingleAbout from './SingleAbout';
+import {expertisesSection} from "../utils/data"
 
 const Technology = () => {
     return (
         <div>
-            <SingleAbout  text="my expertises "sub="exp" link={false}> 
-           
+            <SingleAbout  
+            text={expertisesSection.title}
+            sub={expertisesSection.sub}
+            link={false}
+            > 
                <ul>  
-                 <li>web development</li>
-                 <li>software development</li>
-                 <li>web design</li>
+               {expertisesSection?.full_expart?.map((item)=>( 
+
+                 <li>{item.title}</li>
+               ))}
                 </ul>  
            
             </SingleAbout>

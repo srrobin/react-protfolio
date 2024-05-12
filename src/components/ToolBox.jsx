@@ -1,6 +1,7 @@
 import React from 'react';
 import SingleAbout from './SingleAbout';
 import learning from '../assets/learning2.gif';
+import {toolSection} from "../utils/data"
 const tagGreen = {
     background: "#ADAD9C", 
     border:".1rem solid #ADAD9C",
@@ -36,23 +37,26 @@ const area={
 const ToolBox = () => {
     return (
         <div>
-            <SingleAbout  text="my degital tool box "sub="tool" link={false}> 
+            <SingleAbout  
+            text={toolSection.title}
+            sub={toolSection.sub}
+            link={false}
+            > 
               <div style={area}>
-                <span style={tagGreen}>html</span>
-                <span style={tagGreen}>css</span>
-                <span style={tagGreen}>javascript</span>
-                <span style={tagGreen}>reactjs</span>
-                <span style={tagGreen}>sass</span>
+              {toolSection.full_expart.map((item, index) =>( 
+                <span style={tagGreen} key={index}>{item}</span>
+              ))}
               </div> 
+
               <div style={area}>
-                <span style={tagYeallow}>redux</span>
-                <span style={tagYeallow}>nextjs</span>
-                <span style={tagYeallow}>tailwind css</span>
+              {toolSection.mid_expart.map((item, index) =>( 
+                <span style={tagYeallow} key={index}>{item}</span>
+              ))}
               </div>
               <div style={area}>
-                <span style={tagRed}><img src={learning} alt='' style={{width:"30px"}}/> django</span>
-                <span style={tagRed}><img src={learning} alt='' style={{width:"30px"}}/>drf</span>
-                <span style={tagRed}><img src={learning} alt='' style={{width:"30px"}}/>MongoDBg</span>
+              {toolSection.low_expart.map((item, index) =>( 
+                  <span style={tagRed} key={index}><img src={learning} alt='' style={{width:"30px"}}/>{item}</span>
+              ))}
               </div>
             </SingleAbout>
         </div>
