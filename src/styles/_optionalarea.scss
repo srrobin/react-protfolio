@@ -49,13 +49,14 @@
     }
 }
 
+
 .optional__area{
     padding: 100px 20px;
     @include media-md {
         padding: 50px 20px;
      }
     .single__post{
-        margin-bottom: 50px;
+       
         .single__post__title{
             font-size:clamp(20px ,7vw, 45px);
             font-weight: bold;
@@ -64,8 +65,8 @@
             margin-block-end: 20px;
         }
         .single__post__img{
-            max-width: 1030px;
-            max-height: 500px;
+            max-width: 1010px;
+            // max-height: 450px;
             img{
               height: 100%;
               width: 100%;
@@ -74,13 +75,18 @@
         }
         .single__post__date{
           font-size: 16px;  
-          color: $color_one;
+        //   color: $color_one;
+          color: #910202;
           font-weight: bolder;
           margin: 20px 0;
         }
         .single__post__desc{
-         line-height: 1.60;
-         text-transform: capitalize;
+            line-height: 1.6;
+            text-transform: lowercase;
+        }
+        .single__pos__hr{
+            margin-block-start: 80px;
+            margin-block-end: 80px;
         }
     }
 }

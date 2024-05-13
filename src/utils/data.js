@@ -8,6 +8,8 @@ import LogImage from '../assets/login.png';
 import CrudImage from '../assets/crud.png';
 import QrImage from '../assets/qr22.png';
 import CvImage from '../assets/cv1.png';
+import SDLC from "../assets/devops.png"
+import newImg from "../assets/blog2.png"
 import cv from '../components/pdf/cvup.pdf';
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
@@ -230,10 +232,17 @@ const footerSection = {
 const ideasSection=[
   {
     title:"SOFTWARE DEVELOPMENT LIFE CYCLE (SDLC)",
-    ideaImage:"",
+    ideaImage:SDLC,
     createDate:"1 MAY, 2024",
     subTitle:"",
     desc:"THE SOFTWARE DEVELOPMENT LIFE CYCLE (SDLC) CREATES AN ENVIRONMENT WHERE BUSINESSES AND IT DEPARTMENTS CAN COLLABORATE TO PRODUCE HIGH-QUALITY SOFTWARE. THE SYSTEMATIC APPROACH TO PLANNING, DESIGNING, TESTING, AND DEPLOYING SOFTWARE PRODUCTS MAKES SDLC AN INDISPENSABLE PART OF SUCCESSFUL SOFTWARE PROJECTS. THE SDLC EVOLVES WITH TECHNOLOGY. IN THIS ARTICLE, WE’LL LOOK AT THE STATE OF THE SOFTWARE DEVELOPMENT LIFE CYCLE IN 2024 AND CONSIDER HOW ITS PRINCIPLES CAN BE USED TO CREATE MORE EFFICIENT SOFTWARE PRODUCTS. THE SOFTWARE DEVELOPMENT LIFE CYCLE (SDLC) IS A SET OF STAGES, ACTIVITIES, AND TASKS THAT SOFTWARE PROJECTS GO THROUGH. THE PROCESS OUTLINES HOW SOFTWARE DEVELOPMENT TEAMS BUILD, TEST, DEPLOY, AND MAINTAIN THEIR SOFTWARE TO ACHIEVE TOP QUALITY ON TIME AND WITHIN BUDGET. SDLC BEGINS WITH THE PLANNING PHASE, WHERE THE DEVELOPMENT TEAM DEFINES AND ANALYZES THE PROJECT REQUIREMENTS, GOALS, AND TIMELINE. AFTER THE PLANNING PHASE, THE TEAM CREATES THE PROTOTYPE BY DESIGNING, BUILDING, AND INTEGRATING DIFFERENT COMPONENTS. NEXT, THE DEVELOPERS EVALUATE THE PROJECT, INVESTIGATE ANY REPORTED ISSUES, AND FIX BUGS TO ENSURE THE SOFTWARE WORKS EFFICIENTLY BEFORE THE OFFICIAL LAUNCH. WHILE THE GOAL IS TO ENSURE A QUALITY AND TIMELY DEVELOPMENT PROCESS, THE DEVELOPMENT CYCLE ALSO INVOLVES ROUTINE MAINTENANCE TO ENSURE THE SOFTWARE REMAINS RUNNING WITHOUT HITCHES. WHEN IMPLEMENTED CORRECTLY, THESE CORE SDLC ACTIVITIES PROVIDE SEVERAL BENEFITS. THE FOLLOWING SECTIONS WILL DIVE MORE DEEPLY INTO THE IMPORTANCE OF SDLC TO BUSINESSES AND DEVELOPMENT TEAMS."
+  },
+  {
+    title:"new title  LIFE CYCLE (SDLC)",
+    ideaImage:newImg,
+    createDate:"13 MAY, 2024",
+    subTitle:"",
+    desc:"lorem200Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus dolorum repellendus vel unde, vitae nesciunt accusamus repellat non repudiandae error itaque eos ipsam voluptatem sed adipisci animi odit hic corrupti. Obcaecati, consequatur. Illo dignissimos facere autem unde, hic cupiditate eius voluptas, officiis ipsa, numquam beatae consequuntur nam earum ab! Quidem iste nesciunt consectetur aperiam voluptatibus, id aliquam culpa explicabo rerum itaque modi fugit tempore iusto inventore earum numquam illo eligendi ad atque? Perferendis fuga, unde eligendi amet laudantium qui, autem aperiam suscipit assumenda commodi ea neque sit adipisci vitae itaque eum eius repellendus facere. Laboriosam doloribus odio quasi, soluta provident alias delectus a, aliquam deleniti voluptatum temporibus illo eaque, neque odit iure aut numquam! Itaque rem minus ipsam quidem tempora nesciunt a cupiditate placeat? Error maxime ullam eveniet vitae sed deleniti, atque quasi rerum asperiores architecto doloribus, suscipit tenetur amet dolore molestiae consequuntur eligendi nostrum nisi blanditiis labore quibusdam nulla. Nam dolores vitae nisi provident? Esse dolor voluptas omnis harum nostrum aliquam incidunt provident quas placeat molestias facilis, nesciunt quia cum deleniti iure dolorem aspernatur fugit iste veritatis! Nemo commodi voluptatibus voluptas, nobis esse pariatur eligendi molestiae veritatis minima iure, saepe quas sint! Asperiores perspiciatis amet dolore nemo at."
   }
 ] ;
 
