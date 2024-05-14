@@ -1,7 +1,7 @@
 import React from 'react';
 import Srbutton from './srbutton/Srbutton';
 import signature from '../assets/signature1.png';
-import cv from "./pdf/cvup.pdf"
+import cv from "./pdf/cvf.pdf"
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {

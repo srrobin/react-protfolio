@@ -10,7 +10,7 @@ import QrImage from '../assets/qr22.png';
 import CvImage from '../assets/cv1.png';
 import SDLC from "../assets/devops.png"
 import newImg from "../assets/blog2.png"
-import cv from '../components/pdf/cvup.pdf';
+import cv from '../components/pdf/cvf.pdf';
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
