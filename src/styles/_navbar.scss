@@ -1,3 +1,5 @@
+@import "./allmixing";
+
 .navbar{
     background: transparent;
     padding:50px 20px ;
@@ -6,9 +8,7 @@
     display: grid;
     place-items: normal;
     ul{
-        display: flex;
-        align-items: center;
-        justify-content:space-between;
+        @include flex-spacebetween;
         @include media-md {
            flex-direction: column;
         } 

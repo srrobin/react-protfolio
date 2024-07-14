@@ -1,0 +1,36 @@
+@import "./variables";
+
+
+.marquee {
+    position: relative;
+    width: 1015px;
+    margin: 0  auto;
+    max-width: 100%;
+    height: 120px;
+    overflow-x: hidden;
+    padding: 30px 20px 0px;
+    @include media-md {
+      padding: 30px 20px 0px;
+  } 
+    .track {
+        position: absolute;
+        white-space: nowrap;
+      }
+
+      .track >p {
+        margin: 20px 0;
+      } 
+      .yarndings-20-regular {
+        font-family: "Yarndings 20", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        white-space: nowrap;
+        font-size: clamp(20px, 6vw, 42px);
+        color: $color_one;
+        will-change: transform;
+        }
+
+  }
+  
+
+  

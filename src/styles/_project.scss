@@ -101,6 +101,7 @@
     background: $color_subg;
     padding: 15px;
     border-radius: 10px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
     @include media-md {
         max-width: 550px;
         max-height: 100%;

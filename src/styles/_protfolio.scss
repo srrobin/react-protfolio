@@ -1,40 +1,40 @@
 @import "./variables";
 
 .prot__area{
-    display: flex;
-    align-items: center;
     padding: 0 20px;
    
     .top__area{
-        // max-width: 1050px;
-        // padding: 0 20px;
         .prot__gretting{
-            font-family: 'Overused-Grotesk';
-            font-weight: 500;
-            font-size: clamp(20px, 7vw, 45px);
-            color: $color_two;
-
+            @include title
+            (
+                'Overused-Grotesk', 
+                uppercase,
+                medium,
+                clamp(20px, 7vw, 45px),
+                $color_two,
+            );
         }
         .prot__name{
-            font-family: 'Overused-Grotesk';
-            text-transform: uppercase;
-            font-weight: bolder;
-            font-size: clamp(25px, 7vw, 70px);
-            color: $color_one;
+            @include title
+            (
+                'Overused-Grotesk', 
+                uppercase,
+                bolder,
+                clamp(25px, 7vw, 70px),
+                $color_one,
+            );
         }
         .prot__image{
             max-width: 1030px;
-            max-height: 400px;
+            // max-height: 400px;
             overflow: hidden;
         }
         img{
-            width: 100%;
-            height: 100%;
             object-fit: cover;
-            border-radius: 10px;
-            filter: grayscale(100%);
+            @include border-radius;
+            @include filter-100;
             &:hover{
-                filter: grayscale(10%)
+               @include filter-10;
             }
         }
 

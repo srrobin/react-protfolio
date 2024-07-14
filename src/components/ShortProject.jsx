@@ -3,11 +3,24 @@ import ProjectUpTitle from './ProjectUpTitle';
 import ProjectDownTitle from './ProjectDownTitle';
 import LinkRoundLinkBtn from './srbutton/LinkRoundLinkBtn';
 import {staticDemo} from "../utils/data"
+import { motion } from "framer-motion";
 
 const ShortProject = () => {
     return (
         <div className='demo__project'> 
-            <span>demo project</span>
+            <motion.span 
+                initial={{ y:-50, opacity: 0 }}
+                whileInView={{ y:0, opacity: 1 }}
+                transition={{ 
+                    delay:.6,
+                    y:{type:"spring",stiffness:60},
+                    ease:"easeIn",
+                    opacity:{duration: .5 },
+                    duration: 1 
+                    }}
+            >
+                demo project
+            </motion.span>
             <div className='project__title__top'>
                 Explor All <LinkRoundLinkBtn link="/robin/demo-work"/>
             </div>

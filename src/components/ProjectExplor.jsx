@@ -5,7 +5,7 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import {demoSection} from '../utils/data';
-
+import { motion } from "framer-motion";
 
 
 
@@ -14,10 +14,21 @@ const ProjectExplor = () => {
     return (
         <> 
         <div className='demo__projects__area'> 
-        <div className='demo__title__area'>
+        <motion.div 
+                initial={{ y:-100, opacity: 0 }}
+                whileInView={{ y:0, opacity: 1 }}
+                transition={{ 
+                    delay:.6,
+                    y:{type:"spring",stiffness:60},
+                    ease:"easeIn",
+                    opacity:{duration: .5 },
+                    duration: 1 
+                    }}
+        className='demo__title__area'
+        >
              demo work
             <span>explore</span>
-        </div>
+        </motion.div>
         <div className='demo__projects'>
         {demoSection.map((item) => ( 
             <div className='' style={{order:item.order,marginBottom: "50px"}} key={item.id}>

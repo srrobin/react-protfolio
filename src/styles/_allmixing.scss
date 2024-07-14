@@ -1,5 +1,31 @@
-
-.link__icon{
+@mixin transition-ease {
+  transition: all 0.5s ease;
+}
+@mixin filter-100 {
+  filter: grayscale(100%);
+}
+@mixin filter-10 {
+  filter: grayscale(10%)
+}
+@mixin flex-spacebetween {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+@mixin border-radius {
+   border-radius: 6px;
+}
+@mixin border($width: 1px,$color){
+  border: $width solid $color;
+}
+@mixin title($fontFamily,$textTrans,$fontWeight,$fontSize,$color) {
+  font-family: $fontFamily;
+  text-transform:$textTrans;
+  font-weight:$fontWeight;
+  font-size: $fontSize;
+  color: $color;
+}
+@mixin link__icon{
   background: rgba(0, 0, 0, 0.4);
   height: 70px;
   width: 70px;

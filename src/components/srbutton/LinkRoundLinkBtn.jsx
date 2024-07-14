@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 const LinkRoundLinkBtn = ({link}) => {
     return (
         <Link to={link} target={"_blank"}>
-           <div className='simple__link__icon'>
-            <GoArrowUpRight/>
+            <div className='simple__link__icon'>
+                <GoArrowUpRight/>
             </div>
-           
         </Link>
     );
 };

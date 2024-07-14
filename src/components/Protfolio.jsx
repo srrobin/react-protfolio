@@ -3,10 +3,11 @@ import React from 'react';
 import protImage from "../assets/hero.jpg";
 import Abouts from './Abouts';
 import AnimatedTextCharacter from './AnimatedTextCharacter';
-import Artistic from './Artistic';
+// import Artistic from './Artistic';
 import Footer from './Footer';
 import QuoteArea from './QuoteArea';
 import ShortProject from './ShortProject';
+import Marque from "./Marque";
 
 const Protfolio = () => {
     return (
@@ -24,12 +25,28 @@ const Protfolio = () => {
                 <AnimatedTextCharacter text="Sayam  Rahman  Robin" />
                 </div>
                 <div className='prot__image'>
-                    <img src={protImage} alt=''/>
+                    <motion.img 
+                        // initial={{ opacity: 0, scale: 0.5 }}
+                        // animate={{ opacity: 1, scale: 1 }}
+                        // transition={{ duration: 0.5 }}
+                        initial={{ y:-100, opacity: 0 }}
+                        animate={{ y:0, opacity: 1 }}
+                        transition={{ 
+                            delay:.2,
+                            y:{type:"spring",stiffness:60},
+                            ease:"easeIn",
+                            opacity:{duration: 1 },
+                            duration: 1 
+                        }}
+                        src={protImage} 
+                        alt=''
+                    />
                 </div>
            </div>
         </motion.div>
 
-        <Artistic />
+        {/* <Artistic /> */}
+        <Marque/>
         <Abouts />
         <ShortProject />
         <QuoteArea />

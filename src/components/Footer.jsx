@@ -8,7 +8,7 @@ import Srbutton from "./srbutton/Srbutton";
 import { Link } from 'react-router-dom';
 import {footerSection} from "../utils/data"
 import { GoArrowUpRight } from "react-icons/go"
-
+import { motion } from "framer-motion";
 
 const Footer = () => {
     return (
@@ -42,7 +42,17 @@ const Footer = () => {
                 {/* <Srbutton  textTitle="download cv" link={footerSection.third_col_cvlink}/> */}
                 {/* <Link to={footerSection.third_col_cvlink} target={"_blank"}>Download Cv <GoArrowUpRight/></Link> */}
                     <div className='qr__code'>
-                        <img src={footerSection.third_col_qr} alt=''/>
+                        <motion.img 
+                        initial={{  opacity: 0 }}
+                        whileInView={{  opacity: 1 }}
+                        transition={{ 
+                            delay:.40,
+                            ease:"easeIn",
+                            opacity:{duration: 1 },
+                            duration: 3 
+                            }}
+                        src={footerSection.third_col_qr} alt=''
+                        />
                     </div>
                 </div>
               <div className='social__section'>

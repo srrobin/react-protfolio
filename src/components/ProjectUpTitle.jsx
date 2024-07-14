@@ -1,10 +1,23 @@
 import React from 'react';
 import Srbutton from './srbutton/Srbutton';
 import RoundLinkBtn from './srbutton/RoundLinkBtn';
+import { motion } from "framer-motion";
 
 const ProjectUpTitle = ({staticDemo}) => {
     return (
-        <div className='project__uptitle items' style={{order:staticDemo.order}}>
+        <motion.div 
+        initial={{ x:100, opacity: 0 }}
+        whileInView={{ x:0, opacity: 1 }}
+        transition={{ 
+            delay:.10,
+           x:{type:"spring",stiffness:60},
+            ease:"easeIn",
+            opacity:{duration: 1 },
+            duration: 1 
+            }}
+        className='project__uptitle items' 
+        style={{order:staticDemo.order}}
+        >
            <div className='project__about'>
              <div className='project__title'>{staticDemo.project_title}</div>
              <div className='project__desc'>{staticDemo.project_desc}</div>
@@ -21,7 +34,7 @@ const ProjectUpTitle = ({staticDemo}) => {
              <img src={staticDemo.project_image} alt=''/>
              <RoundLinkBtn link={staticDemo.live_demo_link}/>
            </div>
-        </div>
+        </motion.div>
     );
 };
 
