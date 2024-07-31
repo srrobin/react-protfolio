@@ -13,10 +13,11 @@
         left: 20px;
         @include media-md{
             top: 27px;
-            left: 50%;
+            // left: 50%;
             transform: translate(-50%);
             white-space: nowrap;
             padding: 0 20px;
+            z-index: -9;
         }
     }
     .project__title__top{
