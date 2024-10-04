@@ -100,7 +100,7 @@ const staticDemo = [
   {
     project_title: 'Petclinic',
     project_desc:
-      'PetClinic: Manage pet records, consultations, and shop supplies online with React.js.',
+      'Manage pet records, consultations, and shop supplies online with React.js.',
     live_demo_link: 'https://petclinics.netlify.app',
     github_link: 'https://github.com/srrobin/petclinic',
     project_image: PetImage,
