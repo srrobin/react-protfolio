@@ -14,6 +14,8 @@ import ProtImage from '../assets/protfolio.png';
 import QrImage from '../assets/qr22.png';
 import QuoteImage from '../assets/quote.png';
 import DeshImage from "../assets/d1.png"
+import cisImage from "../assets/cis.png"
+import e2mImage from "../assets/e2m.png"
 import ExpanceImage from "../assets/e1.png"
 
 import cv from '../components/pdf/cv.pdf';
@@ -201,6 +203,30 @@ const demoSection = [
     tech: ['reactjs', 'react-bootstra', 'redux'],
     order: 2,
     type: 2,
+  },
+  {
+    id: 8,
+    project_title: 'Creative IT Soft',
+    project_desc:
+      'CIS is a provider of custom Software development services based on Software as a service(SaaS) and Software as a product(SaaP)',
+    live_demo_link: 'https://creativeitsoft.net/sa',
+    github_link: '',
+    project_image: cisImage,
+    tech: ['nextjs', 'react-bootstra'],
+    order: 2,
+    type: 1,
+  },
+  {
+    id: 9,
+    project_title: 'easy2manage',
+    project_desc:
+      'short-term rental management and customer service',
+    live_demo_link: 'https://easy2manage.co.uk/',
+    github_link: '',
+    project_image: e2mImage,
+    tech: ['reactjs', 'react-bootstra'],
+    order: 2,
+    type: 1,
   },
 ];
 
