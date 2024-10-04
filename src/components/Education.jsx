@@ -1,6 +1,6 @@
 import React from 'react';
 import SingleAbout from './SingleAbout';
-import cv from "./pdf/cvf.pdf"
+import cv from "./pdf/cv.pdf"
 import {educationSection} from "../utils/data"
 
 const Education = () => {

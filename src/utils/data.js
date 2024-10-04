@@ -13,7 +13,10 @@ import PosImage from '../assets/pos.png';
 import ProtImage from '../assets/protfolio.png';
 import QrImage from '../assets/qr22.png';
 import QuoteImage from '../assets/quote.png';
-import cv from '../components/pdf/cvf.pdf';
+import DeshImage from "../assets/d1.png"
+import ExpanceImage from "../assets/e1.png"
+
+import cv from '../components/pdf/cv.pdf';
 
 const meta = {
   title: 'srrobin',
@@ -174,6 +177,30 @@ const demoSection = [
     tech: ['reactjs', 'scss', 'framer-motion'],
     order: 2,
     type: 1,
+  },
+  {
+    id: 6,
+    project_title: 'ant design deshboard',
+    project_desc:
+      'This app is designed for pet clinic front desk personnel to register.',
+    live_demo_link: 'https://ant-deshboard.vercel.app',
+    github_link: 'https://github.com/srrobin/ant-deshboard',
+    project_image: DeshImage,
+    tech: ['reactjs', 'scss', 'ant-dsign'],
+    order: 2,
+    type: 2,
+  },
+  {
+    id: 7,
+    project_title: 'Expense Tracker',
+    project_desc:
+      'This app is designed for pet clinic front desk personnel to register.',
+    live_demo_link: 'https://expenses-tracker07.vercel.app',
+    github_link: 'https://github.com/srrobin/redux-expense-tracker',
+    project_image: ExpanceImage,
+    tech: ['reactjs', 'react-bootstra', 'redux'],
+    order: 2,
+    type: 2,
   },
 ];
 
