@@ -100,7 +100,7 @@ const staticDemo = [
   {
     project_title: 'Petclinic',
     project_desc:
-      'This app is designed for pet clinic front desk personnel to register.',
+      'PetClinic: Manage pet records, consultations, and shop supplies online with React.js.',
     live_demo_link: 'https://petclinics.netlify.app',
     github_link: 'https://github.com/srrobin/petclinic',
     project_image: PetImage,
@@ -109,7 +109,7 @@ const staticDemo = [
   {
     project_title: 'POS System',
     project_desc:
-      'This app is designed for pet clinic front desk personnel to register.',
+      'POS system in React.js for customer, product, order management, and payment processing',
     live_demo_link: 'https://pos-systems.netlify.app/',
     github_link: 'https://github.com/srrobin/pos-system.git',
     project_image: PosImage,
@@ -122,7 +122,7 @@ const demoSection = [
     id: 1,
     project_title: 'Petclinic',
     project_desc:
-      'This app is designed for pet clinic front desk personnel to register.',
+      'Manage pet records, consultations, and shop supplies online with React.js.',
     live_demo_link: 'https://petclinics.netlify.app',
     github_link: 'https://github.com/srrobin/petclinic',
     project_image: PetImage,
@@ -134,7 +134,7 @@ const demoSection = [
     id: 2,
     project_title: 'POS System',
     project_desc:
-      'This app is designed for pet clinic front desk personnel to register.',
+      'POS system in React.js for customer, product, order management, and payment processing',
     live_demo_link: 'https://pos-systems.netlify.app',
     github_link: 'https://github.com/srrobin/pos-system.git',
     project_image: PosImage,
@@ -146,7 +146,7 @@ const demoSection = [
     id: 3,
     project_title: 'Login page',
     project_desc:
-      'This app is designed for pet clinic front desk personnel to register.',
+      'A simple, responsive, and user-friendly login interface using CSS modules.',
     live_demo_link: 'https://demo-react-login.netlify.app',
     github_link: 'https://github.com/srrobin/demo-react-login-design',
     project_image: LogImage,
@@ -158,7 +158,7 @@ const demoSection = [
     id: 5,
     project_title: 'demo-crud',
     project_desc:
-      'This app is designed for pet clinic front desk personnel to register.',
+      'The project is a React CRUD app for managing product data',
     live_demo_link: 'https://demo-crud.netlify.app/',
     github_link: 'https://github.com/srrobin/e-crud',
     project_image: CrudImage,
@@ -170,7 +170,7 @@ const demoSection = [
     id: 4,
     project_title: 'protfolio@2024',
     project_desc:
-      'This app is designed for pet clinic front desk personnel to register.',
+      'Modern portfolio website in React.js showcasing projects, skills, and experience interactively.',
     live_demo_link: 'https://srrobin.vercel.app',
     github_link: 'https://github.com/srrobin/react-protfolio',
     project_image: ProtImage,
@@ -182,7 +182,7 @@ const demoSection = [
     id: 6,
     project_title: 'ant design deshboard',
     project_desc:
-      'This app is designed for pet clinic front desk personnel to register.',
+      'Hotel front desk dashboard in React for bookings, room status, and operations management',
     live_demo_link: 'https://ant-deshboard.vercel.app',
     github_link: 'https://github.com/srrobin/ant-deshboard',
     project_image: DeshImage,
@@ -194,7 +194,7 @@ const demoSection = [
     id: 7,
     project_title: 'Expense Tracker',
     project_desc:
-      'This app is designed for pet clinic front desk personnel to register.',
+      'Track income, expenses, and view current balance easily.',
     live_demo_link: 'https://expenses-tracker07.vercel.app',
     github_link: 'https://github.com/srrobin/redux-expense-tracker',
     project_image: ExpanceImage,
