@@ -17,6 +17,14 @@ import DeshImage from "../assets/d1.png"
 import cisImage from "../assets/cis.png"
 import e2mImage from "../assets/e2m.png"
 import ExpanceImage from "../assets/e1.png"
+import D1 from "../assets/d1.jpg"
+import D2 from "../assets/d2.jpg"
+import D3 from "../assets/d3.jpg"
+import D4 from "../assets/d4.jpg"
+import D5 from "../assets/d5.jpg"
+import D6 from "../assets/d6.jpg"
+import D7 from "../assets/d7.jpg"
+import D8 from "../assets/d8.jpg"
 
 import cv from '../components/pdf/cv.pdf';
 
@@ -265,19 +273,59 @@ const footerSection = {
 };
 
 const ideasSection = [
-  {
+  { id:1,
     title: 'SOFTWARE DEVELOPMENT LIFE CYCLE (SDLC)',
     ideaImage: SDLC,
     createDate: '1 MAY, 2024',
-    subTitle: '',
+    type: 1,
     desc: 'THE SOFTWARE DEVELOPMENT LIFE CYCLE (SDLC) CREATES AN ENVIRONMENT WHERE BUSINESSES AND IT DEPARTMENTS CAN COLLABORATE TO PRODUCE HIGH-QUALITY SOFTWARE. THE SYSTEMATIC APPROACH TO PLANNING, DESIGNING, TESTING, AND DEPLOYING SOFTWARE PRODUCTS MAKES SDLC AN INDISPENSABLE PART OF SUCCESSFUL SOFTWARE PROJECTS. THE SDLC EVOLVES WITH TECHNOLOGY. IN THIS ARTICLE, WE’LL LOOK AT THE STATE OF THE SOFTWARE DEVELOPMENT LIFE CYCLE IN 2024 AND CONSIDER HOW ITS PRINCIPLES CAN BE USED TO CREATE MORE EFFICIENT SOFTWARE PRODUCTS. THE SOFTWARE DEVELOPMENT LIFE CYCLE (SDLC) IS A SET OF STAGES, ACTIVITIES, AND TASKS THAT SOFTWARE PROJECTS GO THROUGH. THE PROCESS OUTLINES HOW SOFTWARE DEVELOPMENT TEAMS BUILD, TEST, DEPLOY, AND MAINTAIN THEIR SOFTWARE TO ACHIEVE TOP QUALITY ON TIME AND WITHIN BUDGET. SDLC BEGINS WITH THE PLANNING PHASE, WHERE THE DEVELOPMENT TEAM DEFINES AND ANALYZES THE PROJECT REQUIREMENTS, GOALS, AND TIMELINE. AFTER THE PLANNING PHASE, THE TEAM CREATES THE PROTOTYPE BY DESIGNING, BUILDING, AND INTEGRATING DIFFERENT COMPONENTS. NEXT, THE DEVELOPERS EVALUATE THE PROJECT, INVESTIGATE ANY REPORTED ISSUES, AND FIX BUGS TO ENSURE THE SOFTWARE WORKS EFFICIENTLY BEFORE THE OFFICIAL LAUNCH. WHILE THE GOAL IS TO ENSURE A QUALITY AND TIMELY DEVELOPMENT PROCESS, THE DEVELOPMENT CYCLE ALSO INVOLVES ROUTINE MAINTENANCE TO ENSURE THE SOFTWARE REMAINS RUNNING WITHOUT HITCHES. WHEN IMPLEMENTED CORRECTLY, THESE CORE SDLC ACTIVITIES PROVIDE SEVERAL BENEFITS. THE FOLLOWING SECTIONS WILL DIVE MORE DEEPLY INTO THE IMPORTANCE OF SDLC TO BUSINESSES AND DEVELOPMENT TEAMS.',
   },
-  {
-    title: 'new title  LIFE CYCLE (SDLC)',
-    ideaImage: newImg,
+  { id:2,
+    title: 'Dewanganj tour of Jamalpur district',
     createDate: '13 MAY, 2024',
-    subTitle: '',
-    desc: 'lorem200Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus dolorum repellendus vel unde, vitae nesciunt accusamus repellat non repudiandae error itaque eos ipsam voluptatem sed adipisci animi odit hic corrupti. Obcaecati, consequatur. Illo dignissimos facere autem unde, hic cupiditate eius voluptas, officiis ipsa, numquam beatae consequuntur nam earum ab! Quidem iste nesciunt consectetur aperiam voluptatibus, id aliquam culpa explicabo rerum itaque modi fugit tempore iusto inventore earum numquam illo eligendi ad atque? Perferendis fuga, unde eligendi amet laudantium qui, autem aperiam suscipit assumenda commodi ea neque sit adipisci vitae itaque eum eius repellendus facere. Laboriosam doloribus odio quasi, soluta provident alias delectus a, aliquam deleniti voluptatum temporibus illo eaque, neque odit iure aut numquam! Itaque rem minus ipsam quidem tempora nesciunt a cupiditate placeat? Error maxime ullam eveniet vitae sed deleniti, atque quasi rerum asperiores architecto doloribus, suscipit tenetur amet dolore molestiae consequuntur eligendi nostrum nisi blanditiis labore quibusdam nulla. Nam dolores vitae nisi provident? Esse dolor voluptas omnis harum nostrum aliquam incidunt provident quas placeat molestias facilis, nesciunt quia cum deleniti iure dolorem aspernatur fugit iste veritatis! Nemo commodi voluptatibus voluptas, nobis esse pariatur eligendi molestiae veritatis minima iure, saepe quas sint! Asperiores perspiciatis amet dolore nemo at.',
+    type: 2,
+    visitedArea: [
+      {
+        id:1,
+        url: D1,
+        description: "Barrage of boats on the banks of the Brahmaputra river in winter."
+      },
+      {
+        id:2,
+        url: D2,
+        description: "As the water in Brahmaputra river is low in winter, Ganjaya rice is planted on the banks of the river with a unique view."
+      },
+      {
+        id:3,
+        url: D3,
+      description: "Barrage of boats on the banks of the Brahmaputra river in winter."
+      },
+      {
+        id:4,
+        url: D4,
+        description: "Barrage of boats on the banks of the Brahmaputra river in winter."
+      },
+      {
+        id:5,
+        url: D5,
+        description: "Damaged banks of Brahmaputra river due to water damage"
+      },
+      {
+        id:6,
+        url: D6,
+        description: "Damaged banks of Brahmaputra river due to water damage"
+      },
+      {
+        id:7,
+        url: D7,
+        description: "Barrage of boats on the banks of the Brahmaputra river in winter."
+      },
+      {
+        id:8,
+        url:D8,
+        description: "Barrage of boats on the banks of the Brahmaputra river in winter."
+      },
+    ]
   },
 ];
 

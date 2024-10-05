@@ -50,10 +50,11 @@
 
 
 @mixin media-md {
-    @media screen and (max-width: 768px) {
-      @content;
-    }
+  @media screen and (max-width: 768px) {
+    // Avoid layout thrashing by managing resize efficiently
+    @content;
   }
+}
   @mixin media-lg {
     @media screen and (max-width: 1024px) {
       @content;

@@ -22,7 +22,7 @@ const Experience = () => {
            
                <ul>  
                {experienceSection?.desc.map((item)=>(
-                 <li>{item.inst_desc}   <span style={item.inst_name ? tagYeallow : null}>
+                 <li key={item.id}>{item.inst_desc}   <span style={item.inst_name ? tagYeallow : null}>
                  {item?.inst_name}
                </span></li>
                ))}

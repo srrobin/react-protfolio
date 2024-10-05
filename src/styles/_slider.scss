@@ -1,0 +1,68 @@
+@import "./variables";
+@import "./allmixing";
+.each-slide {
+    display: flex;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .each-slide>div {
+    width: 70%;
+    // @include media-md {
+    //     width: 100%;
+    //   }
+  }
+  
+  .each-slide>div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .each-slide p {
+    width: 30%;
+    font-size: 1em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    background: #DBDBD3;
+    // @include media-md {
+    //     width: 100%;
+    //   }
+  }
+  
+  
+  .indicator {
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    border: 1px #666 solid;
+    margin: 0;
+    
+  }
+  
+  .indicator.active {
+    color: #fff;
+    background: #666;
+  }
+
+  .arrow-icon {
+    fill: #666;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .each-slide{
+      flex-direction: column;
+    } 
+    .each-slide>div{
+      width: 100%;
+      height: 100%;
+    }
+    .each-slide p{
+      width: 100%;
+      height: 100%;
+    }
+  }

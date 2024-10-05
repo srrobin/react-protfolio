@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./allmixing";
 .optional__section{
     padding: 100px 20px;
     background: $color_subg;
@@ -65,9 +66,10 @@
             margin-block-end: 20px;
         }
         .single__post__img{
-            max-width: 1010px;
-            // max-height: 450px;
+            max-width: 100%;
+            height: auto;
             img{
+              display: block;
               height: 100%;
               width: 100%;
               object-fit: cover;
