@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from 'react';
-// import protImage from "../assets/hero.jpg";
-import protImage from "../assets/p31.png";
+// import protImage from "../assets/p31.png";
+import protImage from "../assets/p31.webp";
 import Abouts from './Abouts';
 import AnimatedTextCharacter from './AnimatedTextCharacter';
 // import Artistic from './Artistic';
