@@ -45,7 +45,7 @@ const ProjectExplor = () => {
                 <div className='optional__title'>
                     <span className='title__link'> 
                     let's move 
-                    <Link to="/robin/real-life-experience">
+                    <Link to="/robin/real-life-experience"  target="_blank">
                         <BsArrowUpRightCircle  className='optional__link'/> 
                     </Link>
                     </span>

@@ -1,20 +1,19 @@
 import { FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa6';
 import { IoLogoWhatsapp } from 'react-icons/io';
-import newImg from '../assets/blog2.png';
 import CrudImage from '../assets/crud.png';
 import CvImage from '../assets/cv1.png';
 import SDLC from '../assets/devops.png';
 import HeroImage from '../assets/hero.jpg';
 import HomeImage from '../assets/home.jpg';
 import LogImage from '../assets/login.png';
-import PetImage from '../assets/petclinic.png';
-import PosImage from '../assets/pos.png';
-import ProtImage from '../assets/protfolio.png';
+import PetImage from '../assets/petclinic.webp';
+import PosImage from '../assets/pos.webp';
+import ProtImage from '../assets/protfolio.webp';
 import QrImage from '../assets/qr22.png';
 import QuoteImage from '../assets/quote.png';
-import DeshImage from "../assets/d1.png"
-import cisImage from "../assets/cis.png"
+import DeshImage from "../assets/d1.webp"
+import cisImage from "../assets/cis.webp"
 import e2mImage from "../assets/e2m.png"
 import ExpanceImage from "../assets/e1.png"
 import D1 from "../assets/d1.jpg"
