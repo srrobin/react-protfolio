@@ -16,6 +16,7 @@ import DeshImage from "../assets/d1.webp"
 import cisImage from "../assets/cis.webp"
 import e2mImage from "../assets/e2m.png"
 import ExpanceImage from "../assets/e1.png"
+import indsroImage from "../assets/pj2.webp"
 import D1 from "../assets/d1.jpg"
 import D2 from "../assets/d2.jpg"
 import D3 from "../assets/d3.jpg"
@@ -171,7 +172,7 @@ const demoSection = [
     live_demo_link: 'https://demo-crud.netlify.app/',
     github_link: 'https://github.com/srrobin/e-crud',
     project_image: CrudImage,
-    tech: ['reactjs', 'react-bootstra', 'i18next', 'tanstack-query'],
+    tech: ['reactjs', 'react-bootstrap', 'i18next', 'tanstack-query'],
     order: 2,
     type: 1,
   },
@@ -207,7 +208,7 @@ const demoSection = [
     live_demo_link: 'https://expenses-tracker07.vercel.app',
     github_link: 'https://github.com/srrobin/redux-expense-tracker',
     project_image: ExpanceImage,
-    tech: ['reactjs', 'react-bootstra', 'redux'],
+    tech: ['reactjs', 'react-bootstrap', 'redux'],
     order: 2,
     type: 2,
   },
@@ -219,7 +220,7 @@ const demoSection = [
     live_demo_link: 'https://creativeitsoft.net/sa',
     github_link: '',
     project_image: cisImage,
-    tech: ['nextjs', 'react-bootstra'],
+    tech: ['nextjs', 'react-bootstrap'],
     order: 2,
     type: 1,
   },
@@ -231,9 +232,21 @@ const demoSection = [
     live_demo_link: 'https://easy2manage.co.uk/',
     github_link: '',
     project_image: e2mImage,
-    tech: ['reactjs', 'react-bootstra'],
+    tech: ['reactjs', 'react-bootstrap'],
     order: 2,
     type: 1,
+  },
+  {
+    id: 10,
+    project_title: 'Indsro',
+    project_desc:
+      'Indsro is a responsive, multipage industrial website built using Bootstrap',
+    live_demo_link: 'https://indsro.vercel.app',
+    github_link: 'https://github.com/srrobin/indsro',
+    project_image: indsroImage,
+    tech: ['html','css', 'bootstrap'],
+    order: 2,
+    type: 2,
   },
 ];
 
